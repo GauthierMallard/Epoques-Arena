@@ -18,3 +18,27 @@
 1651832326 source:c:\users\mazer\desktop\projetinfos2\code2\hugo\rdonnees.c
 	"maBiblio.h"
 
+1652106994 source:c:\users\33769\documents\github\epoques-arena\affliste.c
+	"maBiblio.h"
+
+1652106994 c:\users\33769\documents\github\epoques-arena\mabiblio.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+	<string.h>
+
+1652106994 source:c:\users\33769\documents\github\epoques-arena\lfichier.c
+	"maBiblio.h"
+
+1652106994 source:c:\users\33769\documents\github\epoques-arena\rdonnees.c
+	"maBiblio.h"
+
+1652106994 source:c:\users\33769\documents\github\epoques-arena\main.c
+	"header.h"
+	"maBiblio.h"
+
+1652105614 c:\users\33769\documents\github\epoques-arena\header.h
+	<stdio.h>
+	<stdlib.h>
+

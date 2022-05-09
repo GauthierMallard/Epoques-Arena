@@ -44,6 +44,7 @@
 		<Unit filename="rDonnees.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="structures.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
