@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1652104583 source:c:\users\33769\documents\travail\algo et prog\ece arena allegro projet\main.c
-	"header.h"
-
-1652105614 c:\users\33769\documents\travail\algo et prog\ece arena allegro projet\header.h
-	<stdio.h>
-	<stdlib.h>
-
