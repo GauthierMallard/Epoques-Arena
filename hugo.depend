@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1651757425 source:c:\users\mazer\desktop\projetinfos2\code2\hugo\affliste.c
+	"maBiblio.h"
+
+1651831978 c:\users\mazer\desktop\projetinfos2\code2\hugo\mabiblio.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+	<string.h>
+
+1651757307 source:c:\users\mazer\desktop\projetinfos2\code2\hugo\lfichier.c
+	"maBiblio.h"
+
+1651832201 source:c:\users\mazer\desktop\projetinfos2\code2\hugo\main.c
+	"maBiblio.h"
+
+1651832326 source:c:\users\mazer\desktop\projetinfos2\code2\hugo\rdonnees.c
+	"maBiblio.h"
+
