@@ -12,10 +12,27 @@ Definition des structures du projet
 
 typedef struct sorts
 {
-    char nomS[20];
+    char nomS[16];
+/*Nom du sort, il faudra afficher toutes les donnees a l'ecran pour informer le joueur*/
+    int porteeMin;
+    int porteeMax;
+/*Portee minimale du sort, portee maximale du sort*/
     int paS;
-    int pmS;
-    int pvS;
+/*Nombre de pa que le sort coutera au joueur qui le lance*/
+    int effet1;
+    int effet2;
+/*L'appelation effet permet d'eviter d'avoir trop de parametres.
+Elle designe l'effet qu'aura le sort sur le joueur qui le recoit (pm ou pv)*/
+    int type;
+/*Type permet de définir le type du sort :
+0 = Sort qui ne s'applique que sur le joueur (porteeMin et porteeMax = 0
+1 = Sort dont la zone est une croix autour du joueur
+2 = Sort dont la zone est tout autour du joueur, elle dessine un cercle autour de lui*/
+    int proba1;
+    int proba2;
+/*Designe les probalites que les effets ait lieu. Il faut commencer par proba2
+car ce sera l'effet le plus puissant. Si jamais proba2 ne permet pas au sort d'avoir effet
+on utilise proba1 au moment du lancement du sort. (Si jamais le commentaire n'est pas clair, on peut le reecrire)*/
 
 }t_sort;
 
@@ -24,7 +41,9 @@ typedef struct sorts
 typedef struct classes
 {
     char nomC[20];
+/*Nom de la classe*/
     t_sort sorts[4];
+/*Tableau de 4 structures de type t_sort (=Les 4 sorts de chaque classe)*/
 
 }t_classes;
 
@@ -38,3 +57,4 @@ typedef struct coord
 }t_coord;
 
 #endif // HEADER_H_INCLUDED
+
