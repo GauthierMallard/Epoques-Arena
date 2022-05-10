@@ -21,12 +21,14 @@
 1652106994 source:c:\users\33769\documents\github\epoques-arena\affliste.c
 	"maBiblio.h"
 
-1652106994 c:\users\33769\documents\github\epoques-arena\mabiblio.h
+1652189492 c:\users\33769\documents\github\epoques-arena\mabiblio.h
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	<math.h>
 	<string.h>
+	<allegro.h>
+	"structures.h"
 
 1652106994 source:c:\users\33769\documents\github\epoques-arena\lfichier.c
 	"maBiblio.h"
@@ -34,11 +36,21 @@
 1652106994 source:c:\users\33769\documents\github\epoques-arena\rdonnees.c
 	"maBiblio.h"
 
-1652106994 source:c:\users\33769\documents\github\epoques-arena\main.c
+1652190129 source:c:\users\33769\documents\github\epoques-arena\main.c
 	"header.h"
 	"maBiblio.h"
 
 1652105614 c:\users\33769\documents\github\epoques-arena\header.h
 	<stdio.h>
 	<stdlib.h>
+
+1652107318 c:\users\33769\documents\github\epoques-arena\structures.h
+	<stdio.h>
+	<stdlib.h>
+
+1652187608 source:c:\users\33769\documents\github\epoques-arena\hub de redirection.c
+	"maBiblio.h"
+
+1652189521 source:c:\users\33769\documents\github\epoques-arena\initialisation.c
+	"maBiblio.h"
 

@@ -9,11 +9,15 @@
 #include <time.h>
 #include <math.h>
 #include <string.h>
+#include <allegro.h>
+#include "structures.h"
 
 
 ///Prototypes des fonctions
 int lFichier(char liste[TL][NBC]);
 void affListe(char liste[TL][NBC]);
 char* rDonnees(char liste[TL][NBC], int numD);
+void hubmenus(int* avjeu);
+void initialisation();
 
 #endif // MABIBLIO_H_INCLUDED
