@@ -5,7 +5,7 @@ void hubmenus(int* avjeu)
     if(*avjeu==0)
     {
         ///lancer menu
-        printf("ca marche\n");
+
     }
 
     if(*avjeu==1)

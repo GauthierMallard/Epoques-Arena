@@ -14,4 +14,12 @@ void initialisation()
         allegro_exit();
         exit(EXIT_FAILURE);
     }
+
+    BITMAP *menu;
+    menu=load_bitmap("menu.bmp",NULL);
+    if (!menu)
+    {
+        allegro_message("pas pu trouver reticules.bmp");
+        exit(EXIT_FAILURE);
+    }
 }

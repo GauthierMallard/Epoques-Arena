@@ -1,13 +1,10 @@
 #ifndef HEADER_H_INCLUDED
 #define HEADER_H_INCLUDED
 
-#include <stdio.h>
-#include <stdlib.h>
 
 /*
 Definition des structures du projet
 */
-
 ///structure pour les sorts
 
 typedef struct sorts
@@ -37,4 +34,13 @@ typedef struct coord
 
 }t_coord;
 
+///structure pour les sorts
+typedef struct joueur
+{
+    char nom[20];
+    t_classes classe;
+    int Pvs;
+    int Pas;
+    int Pms;
+}t_joueur;
 #endif // HEADER_H_INCLUDED

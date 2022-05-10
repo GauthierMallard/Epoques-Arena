@@ -14,7 +14,7 @@ int main()
     int avjeu = 0;
     int numD = 1;
     void initialisation();
-
+    // Boucle d'animation pour l'affichage
     while (!key[KEY_ESC])
     {
         if(avjeu>0 || avjeu<4)
