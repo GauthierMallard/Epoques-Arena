@@ -1,24 +1,23 @@
 #include "maBiblio.h"
 
-void hubmenus(int* avjeu)
+void hubmenus(BITMAP* menu,BITMAP* curseur,int* avjeu)
 {
     if(*avjeu==0)
     {
         ///lancer menu
-
+        lancermenu(menu,curseur,avjeu);
     }
-
-    if(*avjeu==1)
+    else if(*avjeu==1)
     {
         ///lancer crédits
     }
 
-    if(*avjeu==2)
+    else if(*avjeu==2)
     {
         ///afficher classes
     }
 
-    if(*avjeu==3)
+    else if(*avjeu==3)
     {
         ///choix nb personnages
     }

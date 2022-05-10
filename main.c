@@ -13,19 +13,28 @@ int main()
     */
     int avjeu = 0;
     int numD = 1;
-    void initialisation();
+    BITMAP *menu;
+    BITMAP *curseur;
+    void initialisation(menu,curseur);
+
+
     // Boucle d'animation pour l'affichage
     while (!key[KEY_ESC])
     {
-        if(avjeu>0 || avjeu<4)
+        if(avjeu<4)
         {
-            hubmenus(&avjeu);
+            hubmenus(menu,curseur,&avjeu);
+        }
+        else if(avjeu==4)
+        {
+            ///jeu
         }
     }
     /*char liste[TL][NBC];
     lFichier(liste);
     rDonnees(liste,numD);
     */
+    allegro_exit();
     return 0;
 }
 END_OF_MAIN();

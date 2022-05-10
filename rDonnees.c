@@ -1,6 +1,17 @@
 #include "maBiblio.h"
+<<<<<<< Updated upstream
 
 ///  Blinder numD lors de la demande de récupération de la donnée
+=======
+#include "structures.h"
+/*
+///  Blinder num lors de la demande de rÃ©cupÃ©ration de la donnÃ©e
+t_sort rDonnees(char liste[TL][NBC], int numS, t_sort sort1)//Extrait sort par sort. numS = numero du sort
+{
+    lFichier(liste);
+
+        ///LECTURE NOM DU SORT
+>>>>>>> Stashed changes
 
 char* rDonnees(char liste[TL][NBC], int numD)//numD = numéro de la donnée. 1 = Nom sort etc
 {
@@ -29,3 +40,7 @@ char* rDonnees(char liste[TL][NBC], int numD)//numD = numéro de la donnée. 1 = N
     return dExtraites;
     free(dExtraites);
 }
+<<<<<<< Updated upstream
+=======
+*/
+>>>>>>> Stashed changes
