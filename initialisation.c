@@ -21,7 +21,7 @@ void initialisation(BITMAP *menu,BITMAP *curseur)
     menu=load_bitmap("menu.bmp",NULL);
     if (!menu)
     {
-        allegro_message("pas pu trouver reticules.bmp");
+        allegro_message("pas pu trouver menu.bmp");
         exit(EXIT_FAILURE);
     }
 
