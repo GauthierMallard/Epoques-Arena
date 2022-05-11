@@ -1,13 +1,3 @@
-#ifndef MABIBLIO_H_INCLUDED
-#define MABIBLIO_H_INCLUDED
-#include "structures.h"
-
-#define TL 4 //Taille de la liste de sorts
-#define NBC 50 //Nombre de caracteres sur une ligne du fichier
-#define DTA 48 //Decalage table ASCII pour les entiers.
-
-#include <stdio.h>
-#include <stdlib.h>
 #include <time.h>
 #include <math.h>
 #include <string.h>
@@ -24,6 +14,8 @@ t_classes cClasses(t_classes classe1);//Fonction appellee lors de la creation d'
 t_classes cClasses1(t_classes classe1);
 t_classes cClasses2(t_classes classe1);
 t_classes cClasses3(t_classes classe1);
+t_joueur cJoueur(t_joueur joueur);
+void testRecupJoueur(t_joueur joueur);//Procédure permettant d'afficher les donnees stockees pour verifier bonne recuperation
 //Il faudra recuperer ce ss programme et l'associer a un personnage par la suite -> Pour celui qui s'en occupe.
 
 #endif // MABIBLIO_H_INCLUDED
