@@ -11,7 +11,7 @@ t_classes cClasses1(t_classes classe1)
     for(numS=0; numS<4; numS++)
     {
 
-        classe1.sorts[numS] = rDonnees(liste,numS,sort);
+        /*classe1.sorts[numS] = rDonnees(liste,numS,sort);
         for(int i = 0; i<16; i++)
         {
             printf("%c", classe1.sorts[numS].nomS[i]);
@@ -56,7 +56,8 @@ t_classes cClasses1(t_classes classe1)
         ///LECTURE PROBA EFFET 2
 
         printf("%d", classe1.sorts[numS].proba2);
-        printf("\n");
+        printf("\n");*/
+        ///LE CODE EN COMMENTAIRE AU DESSUS SERT A VERIFIER LE FONCTIONNEMENT DU SS PROGRAMME
     }
     return classe1;
 }
