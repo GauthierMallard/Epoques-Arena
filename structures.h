@@ -56,5 +56,18 @@ typedef struct coord
 
 }t_coord;
 
-#endif // HEADER_H_INCLUDED
+///structure pour chaque joueur
 
+typedef struct joueur
+{
+    int id; //Contient le numéro du joueur, permet de gérer l'ordre de jeu, A AFFECTER DES LE CHOIX DU NOMBRE DE JOUEUR DANS LE MENU
+    int classe; //Contient le numéro de la classe choisit. On charge la structure appropriee en fonction de cet entier
+    ///VERIFIER POSSIBILITE UTILISATION CLASSE POUR CHARGER DESIGN DU JOUEUR.
+    t_classes classeJ; //Contient la classe du joueur
+    t_coord coordJ;//Contient les coordonnees du joueur
+    int pa;
+    int pm;
+    int pv;
+}t_joueur;
+
+#endif // HEADER_H_INCLUDED
