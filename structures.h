@@ -58,7 +58,7 @@ typedef struct coord
 
 ///structure pour chaque joueur
 
-typedef struct joueur
+typedef struct joueur 
 {
     int id; //Contient le numéro du joueur, permet de gérer l'ordre de jeu, A AFFECTER DES LE CHOIX DU NOMBRE DE JOUEUR DANS LE MENU
     int classe; //Contient le numéro de la classe choisit. On charge la structure appropriee en fonction de cet entier
