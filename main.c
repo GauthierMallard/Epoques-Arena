@@ -12,10 +12,41 @@ int main()
          -4 signifie que le joueur en est au jeux en lui meme
     */
     int avjeu = 0;
+
+    ///pas definitif
+    int nbjoueurs=2;
+    ///pas définitif
+
     int numD = 1;
-    BITMAP *menu;
-    BITMAP *curseur;
-    void initialisation(menu,curseur);
+    BITMAP *menu=NULL;
+    BITMAP *page=NULL;
+    BITMAP *curseur=NULL;
+    BITMAP *cjoueur=NULL;
+    initialisation();
+
+    //récupération Bitmap menu
+    menu=load_bitmap("BITMAPS/Menu.bmp",NULL);
+    if (!menu)
+    {
+        allegro_message("pas pu trouver Menu.bmp");
+        exit(EXIT_FAILURE);
+    }
+
+    //récupération de la Bitmap du curseur
+    curseur=load_bitmap("BITMAPS/epee_1.bmp",NULL);
+    if (!curseur)
+    {
+        allegro_message("pas pu trouver epee_1.bmp");
+        exit(EXIT_FAILURE);
+    }
+
+    //récupération de la Bitmap du choix des joueurs
+    cjoueur=load_bitmap("BITMAPS/menujoueurs.bmp",NULL);
+    if (!curseur)
+    {
+        allegro_message("pas pu trouver menujoueurs.bmp");
+        exit(EXIT_FAILURE);
+    }
 
 
     // Boucle d'animation pour l'affichage
@@ -23,7 +54,7 @@ int main()
     {
         if(avjeu<4)
         {
-            hubmenus(menu,curseur,&avjeu);
+            hubmenus(menu,curseur,cjoueur,&avjeu,&nbjoueurs);
         }
         else if(avjeu==4)
         {

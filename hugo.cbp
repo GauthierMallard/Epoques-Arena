@@ -37,6 +37,12 @@
 		<Unit filename="affListe.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="chargementBitmaps.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="choix du nombre de joueurs.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="hub de redirection.c">
 			<Option compilerVar="CC" />
 		</Unit>

@@ -1,10 +1,11 @@
 #include "maBiblio.h"
 
-void hubmenus(BITMAP* menu,BITMAP* curseur,int* avjeu)
+void hubmenus(BITMAP* menu,BITMAP* curseur,BITMAP* cjoueur,int* avjeu,int* nbjoueur)
 {
+
     if(*avjeu==0)
     {
-        ///lancer menu
+        //lancer menu
         lancermenu(menu,curseur,avjeu);
     }
     else if(*avjeu==1)
@@ -19,6 +20,7 @@ void hubmenus(BITMAP* menu,BITMAP* curseur,int* avjeu)
 
     else if(*avjeu==3)
     {
-        ///choix nb personnages
+        //choix nb personnages
+        nombrejoueurs(cjoueur,curseur,avjeu,nbjoueur);
     }
 }
