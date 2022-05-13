@@ -18,9 +18,18 @@
 int lFichier(char liste[TL][NBC]);//Lecture du fichier ou sont contenus les sorts
 void affListe(char liste[TL][NBC]);//Affiche la liste dans laquelle on recupere le fichier
 t_sort rDonnees(char liste[TL][NBC], int numS, t_sort sort1);//Copie des donnees dans une structure de type t_sort
-void hubmenus(BITMAP* menu,BITMAP* curseur,BITMAP* cjoueur,int* avjeu,int* nbjoueur);//redirige le programmes vers l'action effectue par le joueur
+
+//procedure de redirection
+void hubmenus(BITMAP* menu,BITMAP* curseur,BITMAP* cjoueur,BITMAP *credit,int* avjeu,int* nbjoueur);//redirige le programmes vers l'action effectue par le joueur
+
 void initialisation();//initialise Allegro
 void lancermenu(BITMAP* menu,BITMAP* curseur,int* avjeu);//affiche le menu et gere les interactions avec l'utilisateur
 void nombrejoueurs(BITMAP* fond,BITMAP* curseur,int* avjeu,int* nbjoueur);//permet de choisir le nombre de joueurs avant le debut de la partie
+void credits(BITMAP* fond,BITMAP* curseur,int* avjeu);
 
+
+
+
+///fonctions utiles souvent
+//textprintf_ex(page,font,60,90,makecol(255,0,0), makecol(0,0,0),"%4d %4d",mouse_x,mouse_y);
 #endif // MABIBLIO_H_INCLUDED

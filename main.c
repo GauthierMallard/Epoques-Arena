@@ -22,6 +22,7 @@ int main()
     BITMAP *page=NULL;
     BITMAP *curseur=NULL;
     BITMAP *cjoueur=NULL;
+    BITMAP *credit=NULL;
     initialisation();
 
     //récupération Bitmap menu
@@ -48,13 +49,21 @@ int main()
         exit(EXIT_FAILURE);
     }
 
+    //récupération de la Bitmap des credits
+    credit=load_bitmap("BITMAPS/menucredits.bmp",NULL);
+    if (!curseur)
+    {
+        allegro_message("pas pu trouver menucredits.bmp");
+        exit(EXIT_FAILURE);
+    }
+
 
     // Boucle d'animation pour l'affichage
     while (!key[KEY_ESC])
     {
         if(avjeu<4)
         {
-            hubmenus(menu,curseur,cjoueur,&avjeu,&nbjoueurs);
+            hubmenus(menu,curseur,cjoueur,credit,&avjeu,&nbjoueurs);
         }
         else if(avjeu==4)
         {

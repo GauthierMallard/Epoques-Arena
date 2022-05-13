@@ -1,6 +1,6 @@
 #include "maBiblio.h"
 
-void hubmenus(BITMAP* menu,BITMAP* curseur,BITMAP* cjoueur,int* avjeu,int* nbjoueur)
+void hubmenus(BITMAP* menu,BITMAP* curseur,BITMAP* cjoueur,BITMAP *credit,int* avjeu,int* nbjoueur)
 {
 
     if(*avjeu==0)
@@ -10,7 +10,8 @@ void hubmenus(BITMAP* menu,BITMAP* curseur,BITMAP* cjoueur,int* avjeu,int* nbjou
     }
     else if(*avjeu==1)
     {
-        ///lancer crédits
+        //lancer crédits
+        credits(credit,curseur,avjeu);
     }
 
     else if(*avjeu==2)
