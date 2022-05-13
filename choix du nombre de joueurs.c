@@ -14,7 +14,6 @@ void nombrejoueurs(BITMAP* fond,BITMAP* curseur,int* avjeu,int* nbjoueur)
     {
 
         blit(fond,page,0,0,0,0,SCREEN_W,SCREEN_H);
-        textprintf_ex(page,font,60,90,makecol(255,0,0), makecol(0,0,0),"%4d %4d",mouse_x,mouse_y);
 
 
         //affichage du curseur sur le menu sans les bords roses
@@ -27,27 +26,27 @@ void nombrejoueurs(BITMAP* fond,BITMAP* curseur,int* avjeu,int* nbjoueur)
 
         if(mouse_b&1)
         {
-            //si l'utilisateur clique sur le bouton start on lance le jeu
+            //si l'utilisateur clique sur le bouton 2 on change le nombre de joueurs et on retourne au menu
             if(mouse_x>210 && mouse_x<251 && mouse_y>360 && mouse_y<412)
             {
                 *nbjoueur=2;//changement de la valeur de avjeu
-                allegro_message("vous avez fixe le nombre de joueurs a 2");
+
                 *avjeu=0;
             }
 
-            //si l'utilisateur clique sur le bouton crédits on lance les crédits
+            //si l'utilisateur clique sur le bouton 3 on change le nombre de joueurs et on retourne au menu
             else if(mouse_x>282 && mouse_x<327 && mouse_y>360 && mouse_y<415)
             {
                 *nbjoueur=3;//changement de la valeur de avjeu
-                allegro_message("vous avez fixe le nombre de joueurs a 3");
+
                 *avjeu=0;
             }
 
-            //si l'utilisateur clique sur le bouton classes on lance l'affichage des classes
+            //si l'utilisateur clique sur le bouton 4 on change le nombre de joueurs et on retourne au menu
             else if(mouse_x>350 && mouse_x<390 && mouse_y>360 && mouse_y<412)
             {
                 *nbjoueur=4;//changement de la valeur de avjeu
-                allegro_message("vous avez fixe le nombre de joueurs a 4");
+
                 *avjeu=0;
             }
         }

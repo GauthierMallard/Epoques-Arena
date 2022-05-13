@@ -14,11 +14,12 @@ void lancermenu(BITMAP* menu,BITMAP* curseur,int* avjeu)
     {
 
         blit(menu,page,0,0,0,0,SCREEN_W,SCREEN_H);
-        textprintf_ex(page,font,60,90,makecol(255,0,0), makecol(0,0,0),"%4d %4d",mouse_x,mouse_y);
+
 
 
         //affichage du curseur sur le menu sans les bords roses
         masked_blit(curseur,page,0,0,mouse_x,mouse_y,curseur->w,curseur->h);
+
 
 
         // affichage du menu sur l'écran
@@ -38,7 +39,7 @@ void lancermenu(BITMAP* menu,BITMAP* curseur,int* avjeu)
             else if(mouse_x>430 && mouse_x<590 && mouse_y>280 && mouse_y<350)
             {
                 *avjeu=1;//changement de la valeur de avjeu
-                allegro_message("ouverture des crédits");
+
             }
 
             //si l'utilisateur clique sur le bouton classes on lance l'affichage des classes

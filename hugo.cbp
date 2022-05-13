@@ -55,6 +55,9 @@
 		<Unit filename="lancement menu.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="lancementCredits.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="maBiblio.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
