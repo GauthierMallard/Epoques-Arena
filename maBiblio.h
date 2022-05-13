@@ -18,7 +18,9 @@
 int lFichier(char liste[TL][NBC]);//Lecture du fichier ou sont contenus les sorts
 void affListe(char liste[TL][NBC]);//Affiche la liste dans laquelle on recupere le fichier
 t_sort rDonnees(char liste[TL][NBC], int numS, t_sort sort1);//Copie des donnees dans une structure de type t_sort
-void hubmenus(int* avjeu);
-void initialisation();
+void hubmenus(BITMAP* menu,BITMAP* curseur,BITMAP* cjoueur,int* avjeu,int* nbjoueur);//redirige le programmes vers l'action effectue par le joueur
+void initialisation();//initialise Allegro
+void lancermenu(BITMAP* menu,BITMAP* curseur,int* avjeu);//affiche le menu et gere les interactions avec l'utilisateur
+void nombrejoueurs(BITMAP* fond,BITMAP* curseur,int* avjeu,int* nbjoueur);//permet de choisir le nombre de joueurs avant le debut de la partie
 
 #endif // MABIBLIO_H_INCLUDED

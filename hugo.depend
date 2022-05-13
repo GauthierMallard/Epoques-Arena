@@ -21,7 +21,7 @@
 1652106994 source:c:\users\33769\documents\github\epoques-arena\affliste.c
 	"maBiblio.h"
 
-1652194326 c:\users\33769\documents\github\epoques-arena\mabiblio.h
+1652440362 c:\users\33769\documents\github\epoques-arena\mabiblio.h
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -30,13 +30,14 @@
 	<allegro.h>
 	"structures.h"
 
-1652106994 source:c:\users\33769\documents\github\epoques-arena\lfichier.c
+1652200911 source:c:\users\33769\documents\github\epoques-arena\lfichier.c
 	"maBiblio.h"
 
-1652106994 source:c:\users\33769\documents\github\epoques-arena\rdonnees.c
+1652200911 source:c:\users\33769\documents\github\epoques-arena\rdonnees.c
 	"maBiblio.h"
+	"structures.h"
 
-1652190129 source:c:\users\33769\documents\github\epoques-arena\main.c
+1652440442 source:c:\users\33769\documents\github\epoques-arena\main.c
 	"header.h"
 	"maBiblio.h"
 
@@ -44,11 +45,21 @@
 	<stdio.h>
 	<stdlib.h>
 
-1652194326 c:\users\33769\documents\github\epoques-arena\structures.h
+1652373526 c:\users\33769\documents\github\epoques-arena\structures.h
+	<stdio.h>
+	<stdlib.h>
 
-1652187608 source:c:\users\33769\documents\github\epoques-arena\hub de redirection.c
+1652440362 source:c:\users\33769\documents\github\epoques-arena\hub de redirection.c
 	"maBiblio.h"
 
-1652189521 source:c:\users\33769\documents\github\epoques-arena\initialisation.c
+1652374997 source:c:\users\33769\documents\github\epoques-arena\initialisation.c
+	"maBiblio.h"
+
+1652440677 source:c:\users\33769\documents\github\epoques-arena\lancement menu.c
+	"maBiblio.h"
+
+1652373526 source:c:\users\33769\documents\github\epoques-arena\chargementbitmaps.c
+
+1652440823 source:c:\users\33769\documents\github\epoques-arena\choix du nombre de joueurs.c
 	"maBiblio.h"
 

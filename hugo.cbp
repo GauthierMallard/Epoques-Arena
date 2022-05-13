@@ -37,6 +37,12 @@
 		<Unit filename="affListe.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="chargementBitmaps.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="choix du nombre de joueurs.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="hub de redirection.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -44,6 +50,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="lFichier.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lancement menu.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="maBiblio.h" />
