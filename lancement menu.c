@@ -21,6 +21,7 @@ void lancermenu(BITMAP* menu,BITMAP* curseur,int* avjeu)
         masked_blit(curseur,page,0,0,mouse_x,mouse_y,curseur->w,curseur->h);
 
 
+
         // affichage du menu sur l'écran
         blit(page,screen,0,0,0,0,SCREEN_W,SCREEN_H);
 

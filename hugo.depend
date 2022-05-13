@@ -21,7 +21,7 @@
 1652106994 source:c:\users\33769\documents\github\epoques-arena\affliste.c
 	"maBiblio.h"
 
-1652454403 c:\users\33769\documents\github\epoques-arena\mabiblio.h
+1652468547 c:\users\33769\documents\github\epoques-arena\mabiblio.h
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -55,12 +55,12 @@
 1652448396 source:c:\users\33769\documents\github\epoques-arena\initialisation.c
 	"maBiblio.h"
 
-1652454447 source:c:\users\33769\documents\github\epoques-arena\lancement menu.c
+1652457803 source:c:\users\33769\documents\github\epoques-arena\lancement menu.c
 	"maBiblio.h"
 
 1652448396 source:c:\users\33769\documents\github\epoques-arena\chargementbitmaps.c
 
-1652454403 source:c:\users\33769\documents\github\epoques-arena\choix du nombre de joueurs.c
+1652454509 source:c:\users\33769\documents\github\epoques-arena\choix du nombre de joueurs.c
 	"maBiblio.h"
 
 1652454403 source:c:\users\33769\documents\github\epoques-arena\lancementcredits.c

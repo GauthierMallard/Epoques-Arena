@@ -15,4 +15,5 @@ void initialisation()
         allegro_exit();
         exit(EXIT_FAILURE);
     }
+
 }

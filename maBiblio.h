@@ -32,4 +32,5 @@ void credits(BITMAP* fond,BITMAP* curseur,int* avjeu);
 
 ///fonctions utiles souvent
 //textprintf_ex(page,font,60,90,makecol(255,0,0), makecol(0,0,0),"%4d %4d",mouse_x,mouse_y);
+//textprintf_ex(page, font, 200, 200, makecol(255, 0, 255),-1,"Ca s'affiche");
 #endif // MABIBLIO_H_INCLUDED
