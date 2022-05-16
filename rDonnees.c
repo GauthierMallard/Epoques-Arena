@@ -1,6 +1,6 @@
 #include "maBiblio.h"
 #include "structures.h"
-
+/*
 ///  Blinder num lors de la demande de récupération de la donnée
 t_sort rDonnees(char liste[TL][NBC], int numS, t_sort sort1)//Extrait sort par sort. numS = numero du sort
 {
@@ -64,4 +64,4 @@ t_sort rDonnees(char liste[TL][NBC], int numS, t_sort sort1)//Extrait sort par s
     printf("\n");
     return sort1;
 }
-
+*/

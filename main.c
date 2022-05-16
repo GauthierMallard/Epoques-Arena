@@ -12,20 +12,69 @@ int main()
          -4 signifie que le joueur en est au jeux en lui meme
     */
     int avjeu = 0;
+
+    ///pas definitif
+    int nbjoueurs=2;
+    ///pas définitif
+
     int numD = 1;
-    void initialisation();
+    BITMAP *menu=NULL;
+    BITMAP *page=NULL;
+    BITMAP *curseur=NULL;
+    BITMAP *cjoueur=NULL;
+    BITMAP *credit=NULL;
+    initialisation();
+
+    //récupération Bitmap menu
+    menu=load_bitmap("BITMAPS/Menu.bmp",NULL);
+    if (!menu)
+    {
+        allegro_message("pas pu trouver Menu.bmp");
+        exit(EXIT_FAILURE);
+    }
+
+    //récupération de la Bitmap du curseur
+    curseur=load_bitmap("BITMAPS/epee_1.bmp",NULL);
+    if (!curseur)
+    {
+        allegro_message("pas pu trouver epee_1.bmp");
+        exit(EXIT_FAILURE);
+    }
+
+    //récupération de la Bitmap du choix des joueurs
+    cjoueur=load_bitmap("BITMAPS/menujoueurs.bmp",NULL);
+    if (!curseur)
+    {
+        allegro_message("pas pu trouver menujoueurs.bmp");
+        exit(EXIT_FAILURE);
+    }
+
+    //récupération de la Bitmap des credits
+    credit=load_bitmap("BITMAPS/menucredits.bmp",NULL);
+    if (!curseur)
+    {
+        allegro_message("pas pu trouver menucredits.bmp");
+        exit(EXIT_FAILURE);
+    }
+
+
     // Boucle d'animation pour l'affichage
     while (!key[KEY_ESC])
     {
-        if(avjeu>0 || avjeu<4)
+        if(avjeu<4)
         {
-            hubmenus(&avjeu);
+            hubmenus(menu,curseur,cjoueur,credit,&avjeu,&nbjoueurs);
+        }
+        else if(avjeu==4)
+        {
+            ///jeu
         }
     }
     /*char liste[TL][NBC];
     lFichier(liste);
     rDonnees(liste,numD);
     */
+    allegro_exit();
     return 0;
 }
 END_OF_MAIN();
