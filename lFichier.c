@@ -1,4 +1,6 @@
 #include "maBiblio.h"
+
+
 int lFichier(char liste[TL][NBC])
 {
     int j = 0;//Variable itérative
