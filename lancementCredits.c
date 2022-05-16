@@ -16,7 +16,6 @@ void credits(BITMAP* fond,BITMAP* curseur,int* avjeu)
         blit(fond,page,0,0,0,0,SCREEN_W,SCREEN_H);
 
 
-
         //affichage du curseur sur le menu sans les bords roses
         masked_blit(curseur,page,0,0,mouse_x,mouse_y,curseur->w,curseur->h);
 
