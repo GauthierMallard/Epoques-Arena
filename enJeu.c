@@ -1,26 +1,39 @@
 #include "maBiblio.h"
 
 /*
-Programme qui affiche le menu tant que l'utilisateur ne clique pa sur un bouton en particulier
-Au moment du clique, le programme change la valeur de l'avancement du jeu afin de lancer l'action souhaiter
+Programme qui fait tourner le jeu en fond et gère toute les actions des joueurs durant leurs tours de jeu
 */
-void enJeu(BITMAP* menu,BITMAP* curseur,int* avjeu)
+void enJeu(BITMAP* decor,BITMAP* curseur,int* avjeu,BITMAP *choijoueur,BITMAP *credit,BITMAP *coeur,BITMAP *epee,BITMAP *chaussure,BITMAP *perso0w,BITMAP *perso1w,BITMAP *perso2w,BITMAP *perso3w,BITMAP *persocourt,BITMAP *fondlave,BITMAP *joueurSuivant,BITMAP *caseAttaque,int* nbjoueur)
 {
+    //création du double buffer page
     BITMAP* page;
     page=create_bitmap(SCREEN_W,SCREEN_H);
-    blit(menu,page,0,0,0,0,SCREEN_W,SCREEN_H);
+    //remplissage du buffer avec les décors
+    blit(fondlave,page,0,0,0,0,SCREEN_W,SCREEN_H);
+    blit(decor,page,0,0,0,0,644,636);
 
-    while(*avjeu==0)
+    //affichage des persnnages
+    masked_blit(perso0w, page, 0,0,4*32,5*32,SCREEN_W,SCREEN_H);
+    masked_blit(perso1w, page, 0,0,17*32,6*32,SCREEN_W,SCREEN_H);
+    if(nbjoueur == 3)
+    {
+
+        masked_blit(perso2w, page, 0,0,2*32,13*32,SCREEN_W,SCREEN_H);
+    }
+    else if(nbjoueur == 4)
+    {
+
+        masked_blit(perso2w, page, 0,0,2*32,13*32,SCREEN_W,SCREEN_H);
+        masked_blit(perso3w, page, 0,0,17*32,17*32,SCREEN_W,SCREEN_H);
+    }
+
+    while(*avjeu==5)
     {
 
         blit(menu,page,0,0,0,0,SCREEN_W,SCREEN_H);
 
-
-
         //affichage du curseur sur le menu sans les bords roses
         masked_blit(curseur,page,0,0,mouse_x,mouse_y,curseur->w,curseur->h);
-
-
 
         // affichage du menu sur l'écran
         blit(page,screen,0,0,0,0,SCREEN_W,SCREEN_H);

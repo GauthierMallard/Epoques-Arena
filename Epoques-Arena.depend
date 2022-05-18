@@ -2,7 +2,7 @@
 1652106994 source:c:\users\33769\documents\github\epoques-arena\affliste.c
 	"maBiblio.h"
 
-1652889562 c:\users\33769\documents\github\epoques-arena\mabiblio.h
+1652892291 c:\users\33769\documents\github\epoques-arena\mabiblio.h
 	"structures.h"
 	<stdio.h>
 	<stdlib.h>
@@ -12,14 +12,14 @@
 	<allegro.h>
 	"structures.h"
 
-1652889504 c:\users\33769\documents\github\epoques-arena\structures.h
+1652889976 c:\users\33769\documents\github\epoques-arena\structures.h
 	<stdio.h>
 	<stdlib.h>
 
 1652877011 source:c:\users\33769\documents\github\epoques-arena\choix du nombre de joueurs.c
 	"maBiblio.h"
 
-1652884538 source:c:\users\33769\documents\github\epoques-arena\choixclasse.c
+1652892075 source:c:\users\33769\documents\github\epoques-arena\choixclasse.c
 	"maBiblio.h"
 
 1652877012 source:c:\users\33769\documents\github\epoques-arena\hub de redirection.c
@@ -74,5 +74,11 @@
 	"maBiblio.h"
 
 1652889405 source:c:\users\33769\documents\github\epoques-arena\main.c
+	"maBiblio.h"
+
+1652889827 source:c:\users\33769\documents\github\epoques-arena\lancersort.c
+	"maBiblio.h"
+
+1652889948 source:c:\users\33769\documents\github\epoques-arena\allouecases.c
 	"maBiblio.h"
 

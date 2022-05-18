@@ -40,11 +40,9 @@ void initialisation();//initialise Allegro
 void lancermenu(BITMAP* menu,BITMAP* curseur,int* avjeu);//affiche le menu et gere les interactions avec l'utilisateur
 void nombrejoueurs(BITMAP* fond,BITMAP* curseur,int* avjeu,int* nbjoueur);//permet de choisir le nombre de joueurs avant le debut de la partie
 void credits(BITMAP* fond,BITMAP* curseur,int* avjeu);// affiche les credits
-void choixclasse(BITMAP* fond,BITMAP* curseur,int* avjeu,int* nbjoueur,t_joueur* joueurs[]);//permet au joueur de choisir sa classe
-
-//procedure de redirection
+int choixclasse(BITMAP* fond,BITMAP* curseur);//permet au joueur de choisir sa classe
 void hubmenus(BITMAP* menu,BITMAP* curseur,BITMAP* cjoueur,BITMAP *credit,int* avjeu,int* nbjoueur);//redirige le programmes vers l'action effectue par le joueur
-
+void enJeu(BITMAP* decor,BITMAP* curseur,int* avjeu,BITMAP *choijoueur,BITMAP *credit,BITMAP *coeur,BITMAP *epee,BITMAP *chaussure,BITMAP *perso0w,BITMAP *perso1w,BITMAP *perso2w,BITMAP *perso3w,BITMAP *persocourt,BITMAP *fondlave,BITMAP *joueurSuivant,BITMAP *caseAttaque,int* nbjoueur);
 
 
 

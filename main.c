@@ -19,7 +19,7 @@ int main()
     int numD = 1;
     BITMAP *menu=NULL;
     BITMAP *curseur=NULL;
-    BITMAP *cjoueur=NULL;
+    BITMAP *choijoueur=NULL;
     BITMAP *credit=NULL;
     BITMAP *decor = NULL;
     BITMAP *coeur = NULL;
@@ -30,7 +30,6 @@ int main()
     BITMAP *perso2w = NULL;
     BITMAP *perso3w = NULL;
     BITMAP *persocourt = NULL;
-    BITMAP *page=NULL;
     BITMAP *fondlave=NULL;
     BITMAP *joueurSuivant=NULL;
     BITMAP *caseAttaque=NULL;
@@ -144,7 +143,7 @@ int main()
 
 
     //récupération de la Bitmap du choix des joueurs
-    cjoueur=load_bitmap("BITMAPS/menujoueurs.bmp",NULL);
+    choijoueur=load_bitmap("BITMAPS/menujoueurs.bmp",NULL);
     if (!curseur)
     {
         allegro_message("pas pu trouver menujoueurs.bmp");
@@ -165,7 +164,7 @@ int main()
     {
         if(avjeu<4)
         {
-            hubmenus(menu,curseur,cjoueur,credit,&avjeu,&nbjoueurs);
+            hubmenus(menu,curseur,choijoueur,credit,&avjeu,&nbjoueurs);
         }
         else if(avjeu==4)
         {
@@ -178,7 +177,12 @@ int main()
             {
                 printf("OK\n");
             }
-            joueurs[0] = cJoueur(joueurs[0],0);
+            for(int i=0; i<nbjoueurs; i++)
+            {
+                choixclasse
+                joueurs[i] = cJoueur(joueurs[i],0);
+            }
+
             avjeu=+1;
             testRecupJoueur(joueurs[0]);
 
@@ -187,7 +191,7 @@ int main()
         }
         else if(avjeu==5)
         {
-            ///jeu
+            void enJeu(BITMAP* decor,BITMAP* curseur,int* avjeu,BITMAP *choijoueur,BITMAP *credit,BITMAP *decor,BITMAP *coeur,BITMAP *epee,BITMAP *chaussure,BITMAP *perso0w,BITMAP *perso1w,BITMAP *perso2w,BITMAP *perso3w,BITMAP *persocourt,BITMAP *fondlave,BITMAP *joueurSuivant,BITMAP *caseAttaque);
         }
     }
 
