@@ -37,6 +37,9 @@
 		<Unit filename="affListe.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="alloueCarte.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="cClasses.c">
 			<Option compilerVar="CC" />
 		</Unit>
