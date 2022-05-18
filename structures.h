@@ -13,18 +13,10 @@ Definition des structures du projet
 
 typedef struct coord
 {
-    int lignes;//coordonnees en cases du joueur
-    int colonnes;//coordonnees en cases du joueur
+    int lignes;//coordonnees en pixel
+    int colonnes;//coordonnees en pixel
 }t_coord;
 
-///structure pour la carte
-
-typedef struct cases
-{
-    int lignes;//coordonnees en pixel des lignes
-    int colonnes;//coordonnees en pixel des colonnes
-    int etat;//Permet de savoir si on peut aller dessus ou non(0 oui 1 non)
-}t_cases;
 
 ///structure pour les sorts
 typedef struct sorts
