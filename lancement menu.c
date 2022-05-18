@@ -45,7 +45,7 @@ void lancermenu(BITMAP* menu,BITMAP* curseur,int* avjeu)
             //si l'utilisateur clique sur le bouton classes on lance l'affichage des classes
             else if(mouse_x>620 && mouse_x<800 && mouse_y>280 && mouse_y<350)
             {
-                *avjeu=2;//changement de la valeur de avjeu
+                *avjeu=4;//changement de la valeur de avjeu
                 allegro_message("ouverture des classes");
             }
 

@@ -26,7 +26,7 @@ t_classes cClasses(t_classes classe1);//Fonction appellee lors de la creation d'
 t_classes cClasses1(t_classes classe1);//Identique a cClasses, c'est juste pas le meme fichier ouvert
 t_classes cClasses2(t_classes classe1);//Identique a cClasses, c'est juste pas le meme fichier ouvert
 t_classes cClasses3(t_classes classe1);//Identique a cClasses, c'est juste pas le meme fichier ouvert
-t_joueur* cJoueur(t_joueur* joueur,int choix);//Fonction permettant le remplissage d'une structure de type t_joueur. Renvoie une structure de type t_joueur
+t_joueur cJoueur(t_joueur joueur,int choix);//Fonction permettant le remplissage d'une structure de type t_joueur. Renvoie une structure de type t_joueur
 t_joueur* nbmJoueurs();//Fonction permettant l'allocation d'un tableau dynamique en fonction du nbm de joueurs. Renvoie le tableau par adresse
 void testRecupJoueur(t_joueur joueur);//Procédure permettant d'afficher les donnees stockees pour verifier bonne recuperation
 void lancerSort(t_joueur* lanceur, int choixSort);//Procédure permettant d'appliquer les effets du sort selectionne par le joueur. Int choixSort correspond a la case sur laquelle le joueur a clique(entre 0 et 4).
