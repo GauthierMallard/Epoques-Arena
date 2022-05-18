@@ -55,9 +55,6 @@
 		<Unit filename="cJoueur.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="chargementBitmaps.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="choix du nombre de joueurs.c">
 			<Option compilerVar="CC" />
 		</Unit>
