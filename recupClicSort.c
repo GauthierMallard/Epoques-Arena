@@ -1,11 +1,15 @@
 #include "maBiblio.h"
 
-void recupClicSort(t_joueur* lanceur, t_joueur* victime, int choixSort, )
+void recupClicSort(t_joueur* lanceur, t_joueur* victime, t_joueur* joueurs, int choixSort, t_cases carte[LIGNES][COLONNES],int* nbjoueur)
 {
-    int porteeMin = lanceur.classeJ.sorts[choixSort].porteeMin*32;
-    int porteeMax = lanceur.classeJ.sorts[choixSort].porteeMax*32;
+    int porteeMin = lanceur->classeJ.sorts[choixSort].porteeMin*32;
+    int porteeMax = lanceur->classeJ.sorts[choixSort].porteeMax*32;
     int coordx = 0;
     int coordy = 0;
+    int i = 0;
+    int tmpi = 0;
+    int j = 0;
+    int tmpj = 0;
 
 
     do
@@ -22,8 +26,24 @@ void recupClicSort(t_joueur* lanceur, t_joueur* victime, int choixSort, )
 
     do
     {
+        tmpi = i*32;
+        tmpj = j*32;
 
-    }while()
+        if(tmpi<coordx)
+        {
+            i++;
+        }
+        if(tmpj<coordy)
+        {
+            j++;
+        }
+
+    }while((tmpi<coordx)||(tmpj<coordy));
+
+    if(carte[i-1][j-1].etat == 2)
+    {
+        for(int w = 0; w<)
+    }
 
 
 
