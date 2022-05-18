@@ -56,15 +56,6 @@ typedef struct classes
 
 }t_classes;
 
-///structure pour les coordonnees de chaques personnages
-
-typedef struct coord
-{
-    int ligne;
-    int colonne;
-
-}t_coord;
-
 ///structure pour chaque joueur
 
 typedef struct joueur 
