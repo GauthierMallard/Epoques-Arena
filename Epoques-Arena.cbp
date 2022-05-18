@@ -70,10 +70,22 @@
 		<Unit filename="lFichier.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="lFichier1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lFichier2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lFichier3.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="lancement menu.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="lancementCredits.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lancerSort.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="maBiblio.h" />
