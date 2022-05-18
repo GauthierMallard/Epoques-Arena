@@ -1,24 +1,22 @@
 #include "maBiblio.h"
 
-t_joueur* cJoueur(t_joueur* joueur,int choix)
+t_joueur cJoueur(t_joueur joueur,int choix)
 {
     t_classes classe1;
 
-    do
-    {
         //Recuperer choix sur l'ecran du joueur pour sa classe et stocker dans choix. Remplacer Les 2 prochaines lignes de code
-        printf("Entrer choix\n");
-        scanf("%d", &choix);
+        //printf("Entrer choix\n");
+        //scanf("%d", &choix);
 
         if(choix == 0)
         {
-            joueur->classeJ = cClasses(classe1);
-            joueur->classe = choix;
-            joueur->pa = 5;
-            joueur->pm = 3;
-            joueur->pv = 20;
+            joueur.classeJ = cClasses(classe1);
+            joueur.classe = choix;
+            joueur.pa = 5;
+            joueur.pm = 3;
+            joueur.pv = 20;
         }
-        else if(choix == 1)
+       /* else if(choix == 1)
         {
             joueur->classeJ = cClasses1(classe1);
             joueur->classe = choix;
@@ -41,8 +39,7 @@ t_joueur* cJoueur(t_joueur* joueur,int choix)
             joueur->pa = 5;
             joueur->pm = 3;
             joueur->pv = 20;
-        }
-    }while((choix<0) || (choix>3));
+        }*/
 
     return joueur;
 }

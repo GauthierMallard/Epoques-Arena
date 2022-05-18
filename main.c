@@ -12,7 +12,6 @@ int main()
     */
     int avjeu = 0;
     t_joueur* joueurs=NULL;
-
     int nbjoueurs=2;
 
 
@@ -55,7 +54,6 @@ int main()
         exit(EXIT_FAILURE);
     }
 
-
     // Boucle d'animation pour l'affichage
     while (!key[KEY_ESC])
     {
@@ -65,12 +63,30 @@ int main()
         }
         else if(avjeu==4)
         {
-            joueurs=(t_joueur *)malloc(nbjoueurs*sizeof(t_joueur));
+            joueurs=malloc(nbjoueurs*sizeof(t_joueur));
+            if(joueurs == NULL)
+            {
+                printf("ERREUR\n");
+            }
+            if(joueurs != NULL)
+            {
+                printf("OK\n");
+            }
+            joueurs[0] = cJoueur(joueurs[0],0);
+            avjeu=+1;
+            testRecupJoueur(joueurs[0]);
+
+
+            //choixclasse(menu,curseur,&avjeu,&nbjoueurs,joueurs);
+        }
+        else if(avjeu==5)
+        {
             ///jeu
         }
     }
 
     allegro_exit();
+    free(joueurs);
     return 0;
 }
 END_OF_MAIN();
