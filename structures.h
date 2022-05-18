@@ -8,8 +8,17 @@
 Definition des structures du projet
 */
 
-//structure pour les sorts
 
+//structure pour les coordonnees de chaque joueur
+
+typedef struct coord
+{
+    int lignes;//coordonnees en pixel
+    int colonnes;//coordonnees en pixel
+}t_coord;
+
+
+///structure pour les sorts
 typedef struct sorts
 {
     char nomS[16];
@@ -24,7 +33,8 @@ typedef struct sorts
 /*L'appelation effet permet d'eviter d'avoir trop de parametres.
 Elle designe l'effet qu'aura le sort sur le joueur qui le recoit (pm ou pv)*/
     int type;
-/*Type permet de dÈfinir le type du sort :
+
+/*Type permet de d√©finir le type du sort :
 0 = Sort qui ne s'applique que sur le joueur (porteeMin et porteeMax = 0
 1 = Sort dont la zone est une croix autour du joueur
 2 = Sort dont la zone est tout autour du joueur, elle dessine un cercle autour de lui*/
@@ -47,21 +57,27 @@ typedef struct classes
 
 }t_classes;
 
-//structure pour les coordonnees de chaques personnages
 
-typedef struct coord
+///structure pour chaque joueur
+
+typedef struct joueur 
 {
-    int ligne;
-    int colonne;
-
-}t_coord;
+    int id; //Contient le num√©ro du joueur, permet de g√©rer l'ordre de jeu, A AFFECTER DES LE CHOIX DU NOMBRE DE JOUEUR DANS LE MENU
+    int classe; //Contient le num√©ro de la classe choisit. On charge la structure appropriee en fonction de cet entier
+    ///VERIFIER POSSIBILITE UTILISATION CLASSE POUR CHARGER DESIGN DU JOUEUR.
+    t_classes classeJ; //Contient la classe du joueur
+    t_coord coordJ;//Contient les coordonnees du joueur
+    int pa;
+    int pm;
+    int pv;
+}t_joueur;
 
 //structure pour chaque joueur
 
 typedef struct joueur
 {
-    int id; //Contient le numÈro du joueur, permet de gÈrer l'ordre de jeu, A AFFECTER DES LE CHOIX DU NOMBRE DE JOUEUR DANS LE MENU
-    int classe; //Contient le numÈro de la classe choisit. On charge la structure appropriee en fonction de cet entier
+    int id; //Contient le num√©ro du joueur, permet de g√©rer l'ordre de jeu, A AFFECTER DES LE CHOIX DU NOMBRE DE JOUEUR DANS LE MENU
+    int classe; //Contient le num√©ro de la classe choisit. On charge la structure appropriee en fonction de cet entier
     ///VERIFIER POSSIBILITE UTILISATION CLASSE POUR CHARGER DESIGN DU JOUEUR.
     t_classes classeJ; //Contient la classe du joueur
     t_coord coordJ;//Contient les coordonnees du joueur

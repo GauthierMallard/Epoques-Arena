@@ -2,9 +2,10 @@
 
 int main()
 {
-    /* Pour savoir a quelle etape le jeux est, un entier est creee et chaque valeur correspond à un etat d'avancement :
+
+    /* Pour savoir a quelle etape le jeux est, un entier est creee et chaque valeur correspond Ã  un etat d'avancement :
      ex: -0 signifie que le joueur en est au menu
-         -1 signifie que le joueur en est aux crédits
+         -1 signifie que le joueur en est aux crÃ©dits
          -2 signifie que le joueur en est au parcours des classes
          -3 signifie que le joueur en est au choix du nombre de joueurs
          -4 signifie que les joueurs choississent leurs classes
@@ -22,7 +23,9 @@ int main()
     BITMAP *credit=NULL;
     initialisation();
 
-    //récupération Bitmap menu
+
+
+    //rÃ©cupÃ©ration Bitmap menu
     menu=load_bitmap("BITMAPS/Menu.bmp",NULL);
     if (!menu)
     {
@@ -30,7 +33,8 @@ int main()
         exit(EXIT_FAILURE);
     }
 
-    //récupération de la Bitmap du curseur
+
+    //rÃ©cupÃ©ration de la Bitmap du curseur
     curseur=load_bitmap("BITMAPS/epee_1.bmp",NULL);
     if (!curseur)
     {
@@ -38,7 +42,9 @@ int main()
         exit(EXIT_FAILURE);
     }
 
-    //récupération de la Bitmap du choix des joueurs
+
+
+    //rÃ©cupÃ©ration de la Bitmap du choix des joueurs
     cjoueur=load_bitmap("BITMAPS/menujoueurs.bmp",NULL);
     if (!curseur)
     {
@@ -46,7 +52,8 @@ int main()
         exit(EXIT_FAILURE);
     }
 
-    //récupération de la Bitmap des credits
+
+    //rÃ©cupÃ©ration de la Bitmap des credits
     credit=load_bitmap("BITMAPS/menucredits.bmp",NULL);
     if (!curseur)
     {
