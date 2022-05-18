@@ -8,6 +8,14 @@
 Definition des structures du projet
 */
 
+//structure pour les coordonnees de chaque joueur
+
+typedef struct coord
+{
+    int lignes;//coordonnees en cases du joueur
+    int colonnes;//coordonnees en cases du joueur
+}t_coord;
+
 ///structure pour la carte
 
 typedef struct cases
