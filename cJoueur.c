@@ -1,9 +1,8 @@
 #include "maBiblio.h"
 
-t_joueur cJoueur(t_joueur joueur)
+t_joueur cJoueur(t_joueur joueur, int choix)
 {
     t_classes classe1;
-    int choix;
     do
     {
         //Recuperer choix sur l'ecran du joueur pour sa classe et stocker dans choix. Remplacer Les 2 prochaines lignes de code
