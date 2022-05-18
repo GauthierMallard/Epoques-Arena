@@ -40,6 +40,15 @@
 		<Unit filename="cClasses.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="cClasses1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cClasses2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cClasses3.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="cJoueur.c">
 			<Option compilerVar="CC" />
 		</Unit>
