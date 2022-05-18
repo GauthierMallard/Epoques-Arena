@@ -2,6 +2,7 @@
 
 int main()
 {
+
     /* Pour savoir a quelle etape le jeux est, un entier est creee et chaque valeur correspond à un etat d'avancement :
      ex: -0 signifie que le joueur en est au menu
          -1 signifie que le joueur en est aux crédits
@@ -22,6 +23,8 @@ int main()
     BITMAP *credit=NULL;
     initialisation();
 
+
+
     //récupération Bitmap menu
     menu=load_bitmap("BITMAPS/Menu.bmp",NULL);
     if (!menu)
@@ -29,6 +32,7 @@ int main()
         allegro_message("pas pu trouver Menu.bmp");
         exit(EXIT_FAILURE);
     }
+
 
     //récupération de la Bitmap du curseur
     curseur=load_bitmap("BITMAPS/epee_1.bmp",NULL);
@@ -38,6 +42,8 @@ int main()
         exit(EXIT_FAILURE);
     }
 
+
+
     //récupération de la Bitmap du choix des joueurs
     cjoueur=load_bitmap("BITMAPS/menujoueurs.bmp",NULL);
     if (!curseur)
@@ -45,6 +51,7 @@ int main()
         allegro_message("pas pu trouver menujoueurs.bmp");
         exit(EXIT_FAILURE);
     }
+
 
     //récupération de la Bitmap des credits
     credit=load_bitmap("BITMAPS/menucredits.bmp",NULL);

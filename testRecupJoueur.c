@@ -9,7 +9,6 @@ void testRecupJoueur(t_joueur joueur)
             for(i = 0; i<16; i++)
             {
                 printf("%c", joueur.classeJ.sorts[numS].nomS[i]);
-                printf("%c", joueur.classeJ.sorts[numS].nomS[i]);
             }
             printf("\n");
 

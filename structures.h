@@ -8,6 +8,7 @@
 Definition des structures du projet
 */
 
+
 //structure pour les coordonnees de chaque joueur
 
 typedef struct coord
@@ -26,7 +27,6 @@ typedef struct cases
 }t_cases;
 
 ///structure pour les sorts
-
 typedef struct sorts
 {
     char nomS[16];
@@ -41,6 +41,7 @@ typedef struct sorts
 /*L'appelation effet permet d'eviter d'avoir trop de parametres.
 Elle designe l'effet qu'aura le sort sur le joueur qui le recoit (pm ou pv)*/
     int type;
+
 /*Type permet de définir le type du sort :
 0 = Sort qui ne s'applique que sur le joueur (porteeMin et porteeMax = 0
 1 = Sort dont la zone est une croix autour du joueur
@@ -53,7 +54,7 @@ on utilise proba1 au moment du lancement du sort. (Si jamais le commentaire n'es
 
 }t_sort;
 
-///structure pour les classes
+//structure pour les classes
 
 typedef struct classes
 {
@@ -63,6 +64,7 @@ typedef struct classes
 /*Tableau de 4 structures de type t_sort (=Les 4 sorts de chaque classe)*/
 
 }t_classes;
+
 
 ///structure pour chaque joueur
 
@@ -77,5 +79,21 @@ typedef struct joueur
     int pm;
     int pv;
 }t_joueur;
+
+//structure pour chaque joueur
+
+typedef struct joueur
+{
+    int id; //Contient le numéro du joueur, permet de gérer l'ordre de jeu, A AFFECTER DES LE CHOIX DU NOMBRE DE JOUEUR DANS LE MENU
+    int classe; //Contient le numéro de la classe choisit. On charge la structure appropriee en fonction de cet entier
+    ///VERIFIER POSSIBILITE UTILISATION CLASSE POUR CHARGER DESIGN DU JOUEUR.
+    t_classes classeJ; //Contient la classe du joueur
+    t_coord coordJ;//Contient les coordonnees du joueur
+    int pa;
+    int pm;
+    int pv;
+}t_joueur;
+
+
 
 #endif // HEADER_H_INCLUDED

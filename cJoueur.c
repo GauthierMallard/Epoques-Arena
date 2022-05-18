@@ -1,5 +1,6 @@
 #include "maBiblio.h"
 
+
 t_joueur cJoueur(t_joueur joueur, int choix)
 {
     t_classes classe1;
@@ -9,6 +10,7 @@ t_joueur cJoueur(t_joueur joueur, int choix)
         printf("Entrer choix\n");
         scanf("%d", &choix);
 
+
         if(choix == 0)
         {
             joueur.classeJ = cClasses(classe1);
@@ -17,6 +19,7 @@ t_joueur cJoueur(t_joueur joueur, int choix)
             joueur.pm = 3;
             joueur.pv = 20;
         }
+
         else if(choix == 1)
         {
             joueur.classeJ = cClasses1(classe1);
