@@ -64,6 +64,9 @@
 		<Unit filename="choixClasse.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="enJeu.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="hub de redirection.c">
 			<Option compilerVar="CC" />
 		</Unit>

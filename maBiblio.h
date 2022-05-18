@@ -5,6 +5,9 @@
 #define TL 4 //Taille de la liste de sorts
 #define NBC 50 //Nombre de caracteres sur une ligne du fichier
 #define DTA 48 //Decalage table ASCII pour les entiers.
+#define LIGNES 20 //Nombre de lignes dans la matrice carte
+#define COLONNES 20 //Nombre de colonnes dans la matrice carte
+
 
 #include <stdio.h>
 #include <stdlib.h>

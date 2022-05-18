@@ -17,6 +17,14 @@ typedef struct coord
     int colonnes;//coordonnees en pixel
 }t_coord;
 
+//structure des coordonnees en pixels
+
+typedef struct cases
+{
+    int lignes;//coordonnees en pixel des lignes
+    int colonnes;//coordonnees en pixel des colonnes
+    int etat;//Permet de savoir si on peut aller dessus ou non(0 oui 1 non)
+}t_cases;
 
 ///structure pour les sorts
 typedef struct sorts
@@ -57,20 +65,6 @@ typedef struct classes
 
 }t_classes;
 
-
-///structure pour chaque joueur
-
-typedef struct joueur 
-{
-    int id; //Contient le numéro du joueur, permet de gérer l'ordre de jeu, A AFFECTER DES LE CHOIX DU NOMBRE DE JOUEUR DANS LE MENU
-    int classe; //Contient le numéro de la classe choisit. On charge la structure appropriee en fonction de cet entier
-    ///VERIFIER POSSIBILITE UTILISATION CLASSE POUR CHARGER DESIGN DU JOUEUR.
-    t_classes classeJ; //Contient la classe du joueur
-    t_coord coordJ;//Contient les coordonnees du joueur
-    int pa;
-    int pm;
-    int pv;
-}t_joueur;
 
 //structure pour chaque joueur
 
