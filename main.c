@@ -1,5 +1,3 @@
-
-#include "header.h"
 #include "maBiblio.h"
 
 int main()
@@ -9,17 +7,17 @@ int main()
          -1 signifie que le joueur en est aux crédits
          -2 signifie que le joueur en est au parcours des classes
          -3 signifie que le joueur en est au choix du nombre de joueurs
-         -4 signifie que le joueur en est au jeux en lui meme
+         -4 signifie que les joueurs choississent leurs classes
+         -5 signifie que les joueur en sont au jeux en lui meme
     */
     int avjeu = 0;
+    t_joueur* joueurs=NULL;
 
-    ///pas definitif
     int nbjoueurs=2;
-    ///pas définitif
+
 
     int numD = 1;
     BITMAP *menu=NULL;
-    BITMAP *page=NULL;
     BITMAP *curseur=NULL;
     BITMAP *cjoueur=NULL;
     BITMAP *credit=NULL;
@@ -67,13 +65,11 @@ int main()
         }
         else if(avjeu==4)
         {
+            joueurs=(t_joueur *)malloc(nbjoueurs*sizeof(t_joueur));
             ///jeu
         }
     }
-    /*char liste[TL][NBC];
-    lFichier(liste);
-    rDonnees(liste,numD);
-    */
+
     allegro_exit();
     return 0;
 }
