@@ -1,15 +1,15 @@
 #include "maBiblio.h"
 
-void lancerSort(t_joueur* lanceur, int choixSort, t_cases carte[LIGNES][COLONNES], t_joueur* joueurs,int* nbjoueur)
+void lancerSort(t_joueur* lanceur, int choixSort)
 {
     //Fonction a lancer lors du clic d'un joueur sur une des cases de sort
 
     t_joueur* victime;
     srandom(time(NULL));
 
-   // victime->id=/*id de l'adversaire sur lequel le joueur clic*/;
+    victime->id = /*id de l'adversaire sur lequel le joueur clic*/;
 
-    lanceur->pa=(lanceur->pa - lanceur->classeJ.sorts[choixSort].paS);
+    lanceur->pa = (lanceur->pa - lanceur->classeJ.sorts[choixSort].paS);
 
     long int alea1 = (random()/(lanceur->classeJ.sorts[choixSort].proba1))+1;
     long int alea2 = (random()/(lanceur->classeJ.sorts[choixSort].proba2))+1;
@@ -27,11 +27,11 @@ Type 4 : s’applique dans une zone circulaire. Permet de se régénérer. Effet
     {
         if(alea1 < 3)
         {
-            lanceur->pv=(lanceur->pv + lanceur->classeJ.sorts[choixSort].effet1);
+            lanceur->pv = (lanceur->pv + lanceur->classeJ.sorts[choixSort].effet1);
         }
         if(alea2 < 3)
         {
-            lanceur->pm=(lanceur->pm + lanceur->classeJ.sorts[choixSort].effet2);
+            lanceur->pm = (lanceur->pm + lanceur->classeJ.sorts[choixSort].effet2);
         }
 
     }
@@ -40,22 +40,22 @@ Type 4 : s’applique dans une zone circulaire. Permet de se régénérer. Effet
     {
         if(alea1 < 3)
         {
-            victime->pv=(victime->pv - lanceur->classeJ.sorts[choixSort].effet1);
+            victime->pv = (victime->pv - lanceur->classeJ.sorts[choixSort].effet1);
         }
         if(alea2 < 3)
         {
-            victime->pm=(victime->pm - lanceur->classeJ.sorts[choixSort].effet2);
+            victime->pm = (victime->pm - lanceur->classeJ.sorts[choixSort].effet2);
         }
     }
-    if(lanceur->classeJ.sorts[choixSort].type == 2)
+    if(lanceur.classeJ.sorts[choixSort].type == 2)
     {
         if(alea1 < 3)
         {
-            victime->pv=(victime->pv - lanceur->classeJ.sorts[choixSort].effet1);
+            victime->pv = (victime->pv - lanceur->classeJ.sorts[choixSort].effet1);
         }
         if(alea2 < 3)
         {
-            victime->pm=(victime->pm - lanceur->classeJ.sorts[choixSort].effet2);
+            victime->pm = (victime->pm - lanceur->classeJ.sorts[choixSort].effet2);
         }
     }
 
@@ -63,11 +63,11 @@ Type 4 : s’applique dans une zone circulaire. Permet de se régénérer. Effet
     {
         if(alea1 < 3)
         {
-            victime->pv=(victime->pv - lanceur->classeJ.sorts[choixSort].effet1);
+            victime->pv = (victime->pv - lanceur->classeJ.sorts[choixSort].effet1);
         }
         if(alea2 < 3)
         {
-            lanceur->pv=(lanceur->pv + lanceur->classeJ.sorts[choixSort].effet2);
+            lanceur->pv = (lanceur->pv + lanceur->classeJ.sorts[choixSort].effet2);
         }
     }
 
@@ -75,11 +75,11 @@ Type 4 : s’applique dans une zone circulaire. Permet de se régénérer. Effet
     {
         if(alea1 < 3)
         {
-            victime->pv=(victime->pv - lanceur->classeJ.sorts[choixSort].effet1);
+            victime->pv = (victime->pv - lanceur->classeJ.sorts[choixSort].effet1);
         }
         if(alea2 < 3)
         {
-            lanceur->pv=(lanceur->pv + lanceur->classeJ.sorts[choixSort].effet2);
+            lanceur->pv = (lanceur->pv + lanceur->classeJ.sorts[choixSort].effet2);
         }
     }
 
