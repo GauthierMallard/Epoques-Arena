@@ -42,9 +42,11 @@ void nombrejoueurs(BITMAP* fond,BITMAP* curseur,int* avjeu,int* nbjoueur);//perm
 void credits(BITMAP* fond,BITMAP* curseur,int* avjeu);// affiche les credits
 int choixclasse(BITMAP* fond,BITMAP* curseur);//permet au joueur de choisir sa classe
 void hubmenus(BITMAP* menu,BITMAP* curseur,BITMAP* cjoueur,BITMAP *credit,int* avjeu,int* nbjoueur);//redirige le programmes vers l'action effectue par le joueur
-void enJeu(BITMAP* decor,BITMAP* curseur,int* avjeu,BITMAP *choijoueur,BITMAP *credit,BITMAP *coeur,BITMAP *epee,BITMAP *chaussure,BITMAP *perso0w,BITMAP *perso1w,BITMAP *perso2w,BITMAP *perso3w,BITMAP *persocourt,BITMAP *fondlave,BITMAP *joueurSuivant,BITMAP *caseAttaque,int* nbjoueur);
-
-
+//sous programme qui gere toute la partie en jeu du programme et redirige celui-ci vers les bon sous-programme pour chaque action de l'utilisateur
+void enJeu(BITMAP* decor,BITMAP* curseur,int* avjeu,BITMAP *choijoueur,BITMAP *credit,BITMAP *coeur,BITMAP *epee,BITMAP *chaussure,BITMAP *perso0w,BITMAP *perso1w,BITMAP *perso2w,BITMAP *perso3w,BITMAP *persocourt,BITMAP *fondlave,BITMAP *joueurSuivant,BITMAP *caseAttaque,t_joueur* joueurs,int* nbjoueur);
+//sous programme permettant de remplis automatiquement le buffer de jeu
+void remplissageBuffer(BITMAP* page,BITMAP *coeur,BITMAP *epee,BITMAP *chaussure,BITMAP *perso0w,BITMAP *perso1w,BITMAP *perso2w,BITMAP *perso3w,BITMAP *persocourt,BITMAP *fondlave,BITMAP *joueurSuivant,BITMAP *caseAttaque,t_joueur* joueurs,int jqj,int nbjoueur);
+void initJoueur(t_joueur* joueurs);
 
 
 ///fonctions utiles souvent
