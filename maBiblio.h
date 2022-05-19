@@ -8,6 +8,7 @@
 #define DTA 48 //Decalage table ASCII pour les entiers.
 #define LIGNES 20 //Nombre de lignes dans la matrice carte
 #define COLONNES 20 //Nombre de colonnes dans la matrice carte
+#define NBIMAGE 7 // nombre d'image pour faire le mouvement qui court
 
 ///Les differents include
 
@@ -34,7 +35,7 @@ t_classes cClasses3(t_classes classe1);//Identique a cClasses, c'est juste pas l
 t_joueur cJoueur(t_joueur joueur,int choix);//Fonction permettant le remplissage d'une structure de type t_joueur. Renvoie une structure de type t_joueur
 t_joueur* nbmJoueurs();//Fonction permettant l'allocation d'un tableau dynamique en fonction du nbm de joueurs. Renvoie le tableau par adresse
 void testRecupJoueur(t_joueur joueur);//Procédure permettant d'afficher les donnees stockees pour verifier bonne recuperation
-void lancerSort(t_joueur* lanceur, int choixSort);//Procédure permettant d'appliquer les effets du sort selectionne par le joueur. Int choixSort correspond a la case sur laquelle le joueur a clique(entre 0 et 4).
+void lancerSort(t_joueur* lanceur, int choixSort, t_cases carte[LIGNES][COLONNES], t_joueur* joueurs, int* nbjoueur);//Procédure permettant d'appliquer les effets du sort selectionne par le joueur. Int choixSort correspond a la case sur laquelle le joueur a clique(entre 0 et 4).
 //Il faudra recuperer ce ss programme et l'associer a un personnage par la suite -> Pour celui qui s'en occupe.
 void initialisation();//initialise Allegro
 void lancermenu(BITMAP* menu,BITMAP* curseur,int* avjeu);//affiche le menu et gere les interactions avec l'utilisateur
@@ -42,10 +43,10 @@ void nombrejoueurs(BITMAP* fond,BITMAP* curseur,int* avjeu,int* nbjoueur);//perm
 void credits(BITMAP* fond,BITMAP* curseur,int* avjeu);// affiche les credits
 void choixclasse(BITMAP* fond,BITMAP* curseur,int* avjeu,int* nbjoueur,t_joueur* joueurs[]);//permet au joueur de choisir sa classe
 void hubmenus(BITMAP* menu,BITMAP* curseur,BITMAP* cjoueur,BITMAP *credit,int* avjeu,int* nbjoueur);//redirige le programmes vers l'action effectue par le joueur
-
-
-
-
+void animationPersonnageCourtC(BITMAP*decor,BITMAP*page, BITMAP*persocourt,BITMAP*perso0w,BITMAP*perso1w,BITMAP*perso2w,BITMAP*perso3w,BITMAP*coeur,BITMAP*fondlave,BITMAP*epee,BITMAP*chaussure,BITMAP*joueurSuivant,char nomfichier[256], t_joueur* joueurs, int* nbjoueur, int jqj, t_cases dest);
+void animationPersonnageCourtL(BITMAP*decor,BITMAP*page, BITMAP*persocourt,BITMAP*perso0w,BITMAP*perso1w,BITMAP*perso2w,BITMAP*perso3w,BITMAP*coeur,BITMAP*fondlave,BITMAP*epee,BITMAP*chaussure,BITMAP*joueurSuivant,char nomfichier[256], t_joueur* joueurs, int* nbjoueur, int jqj, t_cases dest);
+void chemin(BITMAP* decor,BITMAP* page, BITMAP* persocourt,BITMAP* perso0w,BITMAP* perso1w,BITMAP* perso2w,BITMAP* perso3w,BITMAP* coeur,BITMAP* fondlave,BITMAP* epee,BITMAP* chaussure,BITMAP* joueurSuivant,char nomfichier[256], t_joueur* joueurs, int* nbjoueur, int jqj, t_cases dest);
+void deplacements(BITMAP* decor,BITMAP* page, BITMAP* persocourt,BITMAP* perso0w,BITMAP* perso1w,BITMAP* perso2w,BITMAP* perso3w,BITMAP* coeur,BITMAP* fondlave,BITMAP* epee,BITMAP* chaussure,BITMAP* joueurSuivant,char nomfichier[256], t_joueur* joueurs, int* nbjoueur, int jqj, t_cases carte[LIGNES][COLONNES]);
 
 ///fonctions utiles souvent
 //textprintf_ex(page,font,60,90,makecol(255,0,0), makecol(0,0,0),"%4d %4d",mouse_x,mouse_y);
