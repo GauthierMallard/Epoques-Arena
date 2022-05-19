@@ -42,9 +42,15 @@ void recupClicSort(t_joueur* lanceur, t_joueur* victime, t_joueur* joueurs, int 
 
     if(carte[i-1][j-1].etat == 2)
     {
-        for(int w = 0; w<)
+        for(int w = 0; w<*nbjoueur; w++)
+        {
+            if(joueurs[w].coordJ.lignes*32 == carte[i-1][j-1].lignes*32)
+            {
+                if(joueurs[w].coordJ.colonnes*32 == carte[i-1][j-1].colonnes*32)
+                {
+                    victime->id = joueurs[w]->id;
+                }
+            }
+        }
     }
-
-
-
 }
