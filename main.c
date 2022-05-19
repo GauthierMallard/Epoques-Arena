@@ -14,22 +14,24 @@ int main()
     int avjeu = 0;
     t_joueur* joueurs=NULL;
     int nbjoueurs=2;
+    int choiclasse=0;
 
 
     BITMAP *menu=NULL;
-    BITMAP *curseur=NULL;
-    BITMAP *choijoueur=NULL;
+    BITMAP *epee = NULL;
     BITMAP *credit=NULL;
+    BITMAP *curseur=NULL;
     BITMAP *decor = NULL;
     BITMAP *coeur = NULL;
-    BITMAP *epee = NULL;
-    BITMAP *chaussure = NULL;
+    BITMAP *fondlave=NULL;
     BITMAP *perso0w = NULL;
     BITMAP *perso1w = NULL;
     BITMAP *perso2w = NULL;
     BITMAP *perso3w = NULL;
+    BITMAP *choijoueur=NULL;
+    BITMAP *choclasse=NULL;
+    BITMAP *chaussure = NULL;
     BITMAP *persocourt = NULL;
-    BITMAP *fondlave=NULL;
     BITMAP *joueurSuivant=NULL;
     BITMAP *caseAttaqueAut=NULL;
     BITMAP *caseAttaqueEte=NULL;
@@ -39,10 +41,7 @@ int main()
 
 
     decor=load_bitmap("BITMAPS/carte2.bmp",NULL);
-
     // Vérification que l'image est bien chargée (dans le cas contraire image vaut NULL)
-    // TOUJOURS LE FAIRE CAR ON N'EST JAMAIS CERTAIN DE BIEN TROUVER L'IMAGE
-
     if (!decor)
     {
         allegro_message("pas pu trouver carte2.bmp");
@@ -51,7 +50,6 @@ int main()
     }
 
     coeur =load_bitmap("BITMAPS/coeur.bmp",NULL);
-
     if (!coeur)
     {
         allegro_message("pas pu trouver coeur.bmp");
@@ -92,7 +90,6 @@ int main()
     }
 
     epee = load_bitmap("BITMAPS/epee.bmp",NULL);
-
     if (!epee)
     {
         allegro_message("pas pu trouver epee.bmp");
@@ -130,19 +127,22 @@ int main()
         allegro_message("pas pu trouver perso2Couyrt0.bmp");
         exit(EXIT_FAILURE);
     }
-        perso3w=load_bitmap("BITMAPS/perso3court0.bmp",NULL);
+
+    perso3w=load_bitmap("BITMAPS/perso3court0.bmp",NULL);
     // void clear_bitmap(BITMAP*personnage1);
     if (!perso1w)
     {
         allegro_message("pas pu trouver perso3Court0.bmp");
         exit(EXIT_FAILURE);
     }
+
     fondlave=load_bitmap("BITMAPS/fondEcran.bmp",NULL);
         if (!fondlave)
     {
         allegro_message("pas pu trouver fondlave.bmp");
         exit(EXIT_FAILURE);
     }
+
     joueurSuivant=load_bitmap("BITMAPS/findetour.bmp",NULL);
         if (!joueurSuivant)
     {
@@ -158,6 +158,13 @@ int main()
         exit(EXIT_FAILURE);
     }
 
+    //récupération Bitmap pour choisir la classe
+    choclasse=load_bitmap("BITMAPS/choixClasse.bmp",NULL);
+    if (!menu)
+    {
+        allegro_message("pas pu trouver Menu.bmp");
+        exit(EXIT_FAILURE);
+    }
 
     //récupération de la Bitmap du curseur
     curseur=load_bitmap("BITMAPS/epee_1.bmp",NULL);
@@ -187,13 +194,13 @@ int main()
     }
 
     // Boucle d'animation pour l'affichage
-    while (!key[KEY_ESC])
+    while (avjeu!=6)
     {
         if(avjeu<4)
         {
             hubmenus(menu,curseur,choijoueur,credit,&avjeu,&nbjoueurs);
         }
-        else if(avjeu==4)
+        else if(avjeu == 4)
         {
             joueurs=malloc(nbjoueurs*sizeof(t_joueur));
             initJoueur(joueurs);
@@ -207,17 +214,16 @@ int main()
             }
             for(int i=0; i<nbjoueurs; i++)
             {
-                ///choixclasse
-                joueurs[i] = cJoueur(joueurs[i],0);
+                choiclasse = choixclasse(choclasse,curseur);
+                allegro_message("ca va la");
+                joueurs[i] = cJoueur(joueurs[i],choiclasse);
             }
 
-            avjeu=+1;
+            avjeu=5;
             testRecupJoueur(joueurs[0]);
 
-
-            //choixclasse(menu,curseur,&avjeu,&nbjoueurs,joueurs);
         }
-        else if(avjeu==5)
+        else if(avjeu == 5)
         {
             enJeu(decor,curseur,&avjeu,choijoueur,credit,coeur,epee,chaussure,perso0w,perso1w,perso2w,perso3w,persocourt,fondlave,joueurSuivant,caseAttaqueAut,joueurs,&nbjoueurs);
         }

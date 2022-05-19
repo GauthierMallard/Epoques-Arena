@@ -6,10 +6,7 @@ t_joueur cJoueur(t_joueur joueur, int choix)
     t_classes classe1;
     do
     {
-        //Recuperer choix sur l'ecran du joueur pour sa classe et stocker dans choix. Remplacer Les 2 prochaines lignes de code
-        printf("Entrer choix\n");
-        scanf("%d", &choix);
-
+        //Recuperer choix sur l'ecran du joueur
 
         if(choix == 0)
         {

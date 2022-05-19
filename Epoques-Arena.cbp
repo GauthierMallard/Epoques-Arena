@@ -67,6 +67,9 @@
 		<Unit filename="hub de redirection.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="initJoueur.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="initialisation.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -96,6 +99,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="rDonnees.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="remplissageBuffer.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="structures.h" />

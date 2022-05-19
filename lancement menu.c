@@ -30,7 +30,6 @@ void lancermenu(BITMAP* menu,BITMAP* curseur,int* avjeu)
             if(mouse_x>60 && mouse_x<120 && mouse_y>280 && mouse_y<350)
             {
                 *avjeu=5;//changement de la valeur de avjeu
-                allegro_message("lancement de la partie");
             }
 
             //si l'utilisateur clique sur le bouton crédits on lance les crédits
@@ -44,7 +43,6 @@ void lancermenu(BITMAP* menu,BITMAP* curseur,int* avjeu)
             else if(mouse_x>620 && mouse_x<800 && mouse_y>280 && mouse_y<350)
             {
                 *avjeu=4;//changement de la valeur de avjeu
-                allegro_message("ouverture des classes");
             }
 
              //si l'utilisateur clique sur le bouton joueurs on lance l'affichage du nombre de joueurs

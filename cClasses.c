@@ -5,6 +5,8 @@ t_classes cClasses(t_classes classe1)
     int numS = 0;
     char liste[TL][NBC];
     t_sort sort;
+    printf("ENTRER NOM :\n");
+    gets(classe1.nomC);
     lFichier(liste);
     for(numS=0; numS<4; numS++)
     {
