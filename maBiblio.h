@@ -47,6 +47,11 @@ void animationPersonnageCourtC(BITMAP*decor,BITMAP*page, BITMAP*persocourt,BITMA
 void animationPersonnageCourtL(BITMAP*decor,BITMAP*page, BITMAP*persocourt,BITMAP*perso0w,BITMAP*perso1w,BITMAP*perso2w,BITMAP*perso3w,BITMAP*coeur,BITMAP*fondlave,BITMAP*epee,BITMAP*chaussure,BITMAP*joueurSuivant,char nomfichier[256], t_joueur* joueurs, int* nbjoueur, int jqj, t_cases dest);
 void chemin(BITMAP* decor,BITMAP* page, BITMAP* persocourt,BITMAP* perso0w,BITMAP* perso1w,BITMAP* perso2w,BITMAP* perso3w,BITMAP* coeur,BITMAP* fondlave,BITMAP* epee,BITMAP* chaussure,BITMAP* joueurSuivant,char nomfichier[256], t_joueur* joueurs, int* nbjoueur, int jqj, t_cases dest);
 void deplacements(BITMAP* decor,BITMAP* page, BITMAP* persocourt,BITMAP* perso0w,BITMAP* perso1w,BITMAP* perso2w,BITMAP* perso3w,BITMAP* coeur,BITMAP* fondlave,BITMAP* epee,BITMAP* chaussure,BITMAP* joueurSuivant,char nomfichier[256], t_joueur* joueurs, int* nbjoueur, int jqj, t_cases carte[LIGNES][COLONNES]);
+void animationPersonnageCourt(BITMAP*decor,BITMAP*page, BITMAP*persocourt,BITMAP*perso0w,BITMAP*perso1w,BITMAP*perso2w,BITMAP*perso3w,BITMAP*coeur,BITMAP*fondlave,BITMAP*epee,BITMAP*chaussure,BITMAP*joueurSuivant,char nomfichier[256], t_joueur* joueurs, int *nbjoueur, int jqj);
+int choixSort(BITMAP*page, BITMAP*affichagesort,t_joueur*joueurs, int jqj);
+void lancerSort(t_joueur* lanceur, int choixSort);
+int testDist(t_joueur* lanceur, int porteeMin, int porteeMax, int coordx, int coordy);
+void remplissageBuffer(BITMAP* page,BITMAP *coeur,BITMAP *epee,BITMAP *chaussure,BITMAP *perso0w,BITMAP *perso1w,BITMAP *perso2w,BITMAP *perso3w,BITMAP *persocourt,BITMAP *fondlave,BITMAP *joueurSuivant,BITMAP *caseAttaque,t_joueur* joueurs,int jqj,int nbjoueur);
 
 ///fonctions utiles souvent
 //textprintf_ex(page,font,60,90,makecol(255,0,0), makecol(0,0,0),"%4d %4d",mouse_x,mouse_y);
