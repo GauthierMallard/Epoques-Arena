@@ -14,7 +14,7 @@ void enJeu(BITMAP* decor,BITMAP* curseur,int* avjeu,BITMAP *choijoueur,BITMAP *c
     while(*avjeu==5)
     {
 
-        remplissageBuffer(page,coeur,epee,chaussure,perso0w,perso1w,perso2w,perso3w,persocourt,fondlave,joueurSuivant,caseAttaque,joueurs,jqj,*nbjoueur);
+        remplissageBuffer(decor,page,coeur,epee,chaussure,perso0w,perso1w,perso2w,perso3w,persocourt,fondlave,joueurSuivant,caseAttaque,joueurs,jqj,*nbjoueur);
         //affichage du curseur sur le menu sans les bords roses
         masked_blit(curseur,page,0,0,mouse_x,mouse_y,curseur->w,curseur->h);
 

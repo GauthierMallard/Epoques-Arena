@@ -2,7 +2,7 @@
 1652106994 source:c:\users\33769\documents\github\epoques-arena\affliste.c
 	"maBiblio.h"
 
-1652971372 c:\users\33769\documents\github\epoques-arena\mabiblio.h
+1653051954 c:\users\33769\documents\github\epoques-arena\mabiblio.h
 	"structures.h"
 	<stdio.h>
 	<stdlib.h>
@@ -19,7 +19,7 @@
 1652877011 source:c:\users\33769\documents\github\epoques-arena\choix du nombre de joueurs.c
 	"maBiblio.h"
 
-1652977201 source:c:\users\33769\documents\github\epoques-arena\choixclasse.c
+1653050868 source:c:\users\33769\documents\github\epoques-arena\choixclasse.c
 	"maBiblio.h"
 
 1652877012 source:c:\users\33769\documents\github\epoques-arena\hub de redirection.c
@@ -46,7 +46,7 @@
 1652977464 source:c:\users\33769\documents\github\epoques-arena\cclasses.c
 	"maBiblio.h"
 
-1652884557 source:c:\users\33769\documents\github\epoques-arena\cclasses1.c
+1653050673 source:c:\users\33769\documents\github\epoques-arena\cclasses1.c
 	"maBiblio.h"
 
 1652884557 source:c:\users\33769\documents\github\epoques-arena\cclasses2.c
@@ -58,13 +58,13 @@
 1652884557 source:c:\users\33769\documents\github\epoques-arena\allouecarte.c
 	"maBiblio.h"
 
-1652976324 source:c:\users\33769\documents\github\epoques-arena\cjoueur.c
+1653050868 source:c:\users\33769\documents\github\epoques-arena\cjoueur.c
 	"maBiblio.h"
 
-1652973627 source:c:\users\33769\documents\github\epoques-arena\enjeu.c
+1653051974 source:c:\users\33769\documents\github\epoques-arena\enjeu.c
 	"maBiblio.h"
 
-1652884557 source:c:\users\33769\documents\github\epoques-arena\lfichier1.c
+1653050673 source:c:\users\33769\documents\github\epoques-arena\lfichier1.c
 	"maBiblio.h"
 
 1652884557 source:c:\users\33769\documents\github\epoques-arena\lfichier2.c
@@ -73,7 +73,7 @@
 1652884557 source:c:\users\33769\documents\github\epoques-arena\lfichier3.c
 	"maBiblio.h"
 
-1652976375 source:c:\users\33769\documents\github\epoques-arena\main.c
+1653051984 source:c:\users\33769\documents\github\epoques-arena\main.c
 	"maBiblio.h"
 
 1652889827 source:c:\users\33769\documents\github\epoques-arena\lancersort.c
@@ -85,6 +85,6 @@
 1652967009 source:c:\users\33769\documents\github\epoques-arena\initjoueur.c
 	"maBiblio.h"
 
-1652973627 source:c:\users\33769\documents\github\epoques-arena\remplissagebuffer.c
+1653051954 source:c:\users\33769\documents\github\epoques-arena\remplissagebuffer.c
 	"maBiblio.h"
 

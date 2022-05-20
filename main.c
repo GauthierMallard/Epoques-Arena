@@ -215,13 +215,14 @@ int main()
             for(int i=0; i<nbjoueurs; i++)
             {
                 choiclasse = choixclasse(choclasse,curseur);
-                allegro_message("ca va la");
                 joueurs[i] = cJoueur(joueurs[i],choiclasse);
             }
 
             avjeu=5;
-            testRecupJoueur(joueurs[0]);
-
+            //testRecupJoueur(joueurs[1]);
+            //Test afin de verifier la classe recupere
+            //par le sous-programme
+            //testRecupJoueur
         }
         else if(avjeu == 5)
         {

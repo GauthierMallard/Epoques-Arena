@@ -5,8 +5,10 @@ utilisable à chaque fois que l'on veut reset l'affichage à l'écran pour revenir 
 avec les donnees de joueurs mises à jour
 ex: emplacement, pa, pm,...
 */
-void remplissageBuffer(BITMAP* page,BITMAP *coeur,BITMAP *epee,BITMAP *chaussure,BITMAP *perso0w,BITMAP *perso1w,BITMAP *perso2w,BITMAP *perso3w,BITMAP *persocourt,BITMAP *fondlave,BITMAP *joueurSuivant,BITMAP *caseAttaque,t_joueur* joueurs,int jqj,int nbjoueur)
+void remplissageBuffer(BITMAP* decor,BITMAP* page,BITMAP *coeur,BITMAP *epee,BITMAP *chaussure,BITMAP *perso0w,BITMAP *perso1w,BITMAP *perso2w,BITMAP *perso3w,BITMAP *persocourt,BITMAP *fondlave,BITMAP *joueurSuivant,BITMAP *caseAttaque,t_joueur* joueurs,int jqj,int nbjoueur)
 {
+    blit(fondlave,page,0,0,0,0,SCREEN_W,SCREEN_H);
+    blit(decor,page,0,0,0,0,640,640);
     masked_blit(epee,page,0,0,710,470,SCREEN_W,SCREEN_H);
     textprintf_ex(page, font, 750, 575, makecol(0, 0, 0),-1,"%d",joueurs[jqj].pa); // affiche ptd'attaque du joueur
     masked_blit(caseAttaque,page,0,0,200,640,SCREEN_W,SCREEN_H);
