@@ -11,8 +11,8 @@ t_classes cClasses1(t_classes classe1)
     for(numS=0; numS<4; numS++)
     {
 
-        /*classe1.sorts[numS] = rDonnees(liste,numS,sort);
-        for(int i = 0; i<16; i++)
+        classe1.sorts[numS] = rDonnees(liste,numS,sort);
+        /*for(int i = 0; i<16; i++)
         {
             printf("%c", classe1.sorts[numS].nomS[i]);
         }
