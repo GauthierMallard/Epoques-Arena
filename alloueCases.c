@@ -166,4 +166,7 @@ void alloueCases(t_cases carte[LIGNES][COLONNES])
         carte[19][j].etat = 1;
     }
 
+
+
 }
+
