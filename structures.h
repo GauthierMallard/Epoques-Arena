@@ -59,7 +59,7 @@ on utilise proba1 au moment du lancement du sort. (Si jamais le commentaire n'es
 typedef struct classes
 {
     char nomC[20];
-/*Nom de la classe*/
+/*Nom du joueur*/
     t_sort sorts[4];
 /*Tableau de 4 structures de type t_sort (=Les 4 sorts de chaque classe)*/
 

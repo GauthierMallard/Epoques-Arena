@@ -18,7 +18,7 @@ int choixclasse(BITMAP* fond,BITMAP* curseur)
         //affichage du curseur sur le menu sans les bords roses
         masked_blit(curseur,page,0,0,mouse_x,mouse_y,curseur->w,curseur->h);
 
-        textprintf_ex(page,font,60,90,makecol(255,0,0), makecol(0,0,0),"%4d %4d",mouse_x,mouse_y);
+        //textprintf_ex(page,font,60,90,makecol(255,0,0), makecol(0,0,0),"%4d %4d",mouse_x,mouse_y);
 
         // affichage du menu sur l'écran
         blit(page,screen,0,0,0,0,SCREEN_W,SCREEN_H);

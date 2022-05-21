@@ -48,7 +48,7 @@ void recupClicSort(t_joueur* lanceur, t_joueur* victime, t_joueur* joueurs, int 
             {
                 if(joueurs[w].coordJ.colonnes*32 == carte[i-1][j-1].colonnes*32)
                 {
-                    victime->id = joueurs[w].id;
+                    victime = &joueurs[w];
                 }
             }
         }

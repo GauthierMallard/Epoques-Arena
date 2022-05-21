@@ -2,7 +2,7 @@
 1652106994 source:c:\users\33769\documents\github\epoques-arena\affliste.c
 	"maBiblio.h"
 
-1653053304 c:\users\33769\documents\github\epoques-arena\mabiblio.h
+1653151456 c:\users\33769\documents\github\epoques-arena\mabiblio.h
 	"structures.h"
 	<stdio.h>
 	<stdlib.h>
@@ -12,29 +12,29 @@
 	<allegro.h>
 	"structures.h"
 
-1652889976 c:\users\33769\documents\github\epoques-arena\structures.h
+1653148197 c:\users\33769\documents\github\epoques-arena\structures.h
 	<stdio.h>
 	<stdlib.h>
 
 1652877011 source:c:\users\33769\documents\github\epoques-arena\choix du nombre de joueurs.c
 	"maBiblio.h"
 
-1653050868 source:c:\users\33769\documents\github\epoques-arena\choixclasse.c
+1653146932 source:c:\users\33769\documents\github\epoques-arena\choixclasse.c
 	"maBiblio.h"
 
-1652877012 source:c:\users\33769\documents\github\epoques-arena\hub de redirection.c
+1653141698 source:c:\users\33769\documents\github\epoques-arena\hub de redirection.c
 	"maBiblio.h"
 
 1652967034 source:c:\users\33769\documents\github\epoques-arena\initialisation.c
 	"maBiblio.h"
 
-1652976217 source:c:\users\33769\documents\github\epoques-arena\lancement menu.c
+1653142102 source:c:\users\33769\documents\github\epoques-arena\lancement menu.c
 	"maBiblio.h"
 
 1652877012 source:c:\users\33769\documents\github\epoques-arena\lancementcredits.c
 	"maBiblio.h"
 
-1652884538 source:c:\users\33769\documents\github\epoques-arena\lfichier.c
+1653146932 source:c:\users\33769\documents\github\epoques-arena\lfichier.c
 	"maBiblio.h"
 
 1652876995 source:c:\users\33769\documents\github\epoques-arena\rdonnees.c
@@ -61,7 +61,7 @@
 1653050868 source:c:\users\33769\documents\github\epoques-arena\cjoueur.c
 	"maBiblio.h"
 
-1653053343 source:c:\users\33769\documents\github\epoques-arena\enjeu.c
+1653151602 source:c:\users\33769\documents\github\epoques-arena\enjeu.c
 	"maBiblio.h"
 
 1653050673 source:c:\users\33769\documents\github\epoques-arena\lfichier1.c
@@ -73,18 +73,36 @@
 1652884557 source:c:\users\33769\documents\github\epoques-arena\lfichier3.c
 	"maBiblio.h"
 
-1653053576 source:c:\users\33769\documents\github\epoques-arena\main.c
+1653148197 source:c:\users\33769\documents\github\epoques-arena\main.c
 	"maBiblio.h"
 
-1652889827 source:c:\users\33769\documents\github\epoques-arena\lancersort.c
+1653140710 source:c:\users\33769\documents\github\epoques-arena\lancersort.c
 	"maBiblio.h"
 
-1652889948 source:c:\users\33769\documents\github\epoques-arena\allouecases.c
+1653136068 source:c:\users\33769\documents\github\epoques-arena\allouecases.c
 	"maBiblio.h"
 
-1652967009 source:c:\users\33769\documents\github\epoques-arena\initjoueur.c
+1653148197 source:c:\users\33769\documents\github\epoques-arena\initjoueur.c
 	"maBiblio.h"
 
-1653053469 source:c:\users\33769\documents\github\epoques-arena\remplissagebuffer.c
+1653148197 source:c:\users\33769\documents\github\epoques-arena\remplissagebuffer.c
+	"maBiblio.h"
+
+1653151797 source:c:\users\33769\documents\github\epoques-arena\animationpersonnagecourt.c
+	"maBiblio.h"
+
+1653151565 source:c:\users\33769\documents\github\epoques-arena\chemin.c
+	"maBiblio.h"
+
+1653136068 source:c:\users\33769\documents\github\epoques-arena\choixsort.c
+	"maBiblio.h"
+
+1653151565 source:c:\users\33769\documents\github\epoques-arena\deplacement.c
+	"maBiblio.h"
+
+1653140710 source:c:\users\33769\documents\github\epoques-arena\recupclicsort.c
+	"maBiblio.h"
+
+1653139832 source:c:\users\33769\documents\github\epoques-arena\testdist.c
 	"maBiblio.h"
 

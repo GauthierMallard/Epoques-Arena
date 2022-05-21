@@ -15,6 +15,6 @@ int lFichier(char liste[TL][NBC])
         fgets(liste[j], NBC, f);//On récupère chaque chaine de caractère
     }
 
-    //affListe(liste);
+    affListe(liste);
     return 1;
 }

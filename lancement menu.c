@@ -6,9 +6,11 @@ Au moment du clique, le programme change la valeur de l'avancement du jeu afin d
 */
 void lancermenu(BITMAP* menu,BITMAP* curseur,int* avjeu)
 {
-    BITMAP* page;
+
+    BITMAP* page=NULL;
     page=create_bitmap(SCREEN_W,SCREEN_H);
     blit(menu,page,0,0,0,0,SCREEN_W,SCREEN_H);
+
 
     while(*avjeu==0)
     {

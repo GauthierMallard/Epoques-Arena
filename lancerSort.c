@@ -2,16 +2,16 @@
 
 void lancerSort(t_joueur* lanceur, int choixSort, t_cases carte[LIGNES][COLONNES], t_joueur* joueurs, int* nbjoueur)
 {
-    /*
+
     //Fonction a lancer lors du clic d'un joueur sur une des cases de sort
 
-    t_joueur* victime;
+    t_joueur* victime=NULL;
     srand(time(NULL));
 
 
     if(mouse_b&1)
     {
-        victime->id/*=id de l'adversaire sur lequel le joueur clic*/;///LES 2 WARNINGS SONT DU A CETTE LIGNE
+        recupClicSort(lanceur,victime,joueurs,choixSort,carte,nbjoueur);
 
 
         //Certainement à mettre sous la forme d'un ss programme, pour recup les coord de la case sur laquelle le joueur clic, les comparer à celles des joueurs et renvoyer l'id du joueur visé.
@@ -91,7 +91,7 @@ void lancerSort(t_joueur* lanceur, int choixSort, t_cases carte[LIGNES][COLONNES
             }
         }
 
-*/
+
 
         /*Je pense qu'il n'y a pas besoin de return quoi que ce soit.
         Lorsque le joueur lance un sort, on lui enleve des pa le temps d'un tour et on applique les effets

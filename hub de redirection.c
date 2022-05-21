@@ -2,7 +2,6 @@
 
 void hubmenus(BITMAP* menu,BITMAP* curseur,BITMAP* cjoueur,BITMAP *credit,int* avjeu,int* nbjoueur)
 {
-
     if(*avjeu==0)
     {
         //lancer menu
