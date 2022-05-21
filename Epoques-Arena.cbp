@@ -67,6 +67,9 @@
 		<Unit filename="choixClasse.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="choixSort.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="enJeu.c">
 			<Option compilerVar="CC" />
 		</Unit>
