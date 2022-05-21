@@ -17,6 +17,14 @@ typedef struct coord
     int colonnes;//coordonnees en pixel
 }t_coord;
 
+//structure des coordonnees en pixels
+
+typedef struct cases
+{
+    int lignes;//coordonnees en pixel des lignes
+    int colonnes;//coordonnees en pixel des colonnes
+    int etat;//Permet de savoir si on peut aller dessus ou non(0 oui 1 non)
+}t_cases;
 
 ///structure pour les sorts
 typedef struct sorts
@@ -58,7 +66,7 @@ typedef struct classes
 }t_classes;
 
 
-///structure pour chaque joueur
+//structure pour chaque joueur
 
 typedef struct joueur
 {
@@ -71,15 +79,6 @@ typedef struct joueur
     int pm;
     int pv;
 }t_joueur;
-
-//structure des coordonnees en pixels
-
-typedef struct cases
-{
-    int lignes;//coordonnees en pixel des lignes
-    int colonnes;//coordonnees en pixel des colonnes
-    int etat;//Permet de savoir si on peut aller dessus ou non(0 oui 1 non)
-}t_cases;
 
 
 

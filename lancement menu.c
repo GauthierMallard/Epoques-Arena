@@ -16,10 +16,8 @@ void lancermenu(BITMAP* menu,BITMAP* curseur,int* avjeu)
         blit(menu,page,0,0,0,0,SCREEN_W,SCREEN_H);
 
 
-
         //affichage du curseur sur le menu sans les bords roses
         masked_blit(curseur,page,0,0,mouse_x,mouse_y,curseur->w,curseur->h);
-
 
 
         // affichage du menu sur l'écran
@@ -31,8 +29,7 @@ void lancermenu(BITMAP* menu,BITMAP* curseur,int* avjeu)
             //si l'utilisateur clique sur le bouton start on lance le jeu
             if(mouse_x>60 && mouse_x<120 && mouse_y>280 && mouse_y<350)
             {
-                *avjeu=4;//changement de la valeur de avjeu
-                allegro_message("lancement de la partie");
+                *avjeu=5;//changement de la valeur de avjeu
             }
 
             //si l'utilisateur clique sur le bouton crédits on lance les crédits
@@ -46,7 +43,6 @@ void lancermenu(BITMAP* menu,BITMAP* curseur,int* avjeu)
             else if(mouse_x>620 && mouse_x<800 && mouse_y>280 && mouse_y<350)
             {
                 *avjeu=4;//changement de la valeur de avjeu
-                allegro_message("ouverture des classes");
             }
 
              //si l'utilisateur clique sur le bouton joueurs on lance l'affichage du nombre de joueurs

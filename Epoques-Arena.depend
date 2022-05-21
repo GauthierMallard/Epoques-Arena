@@ -1,0 +1,90 @@
+# depslib dependency file v1.0
+1652106994 source:c:\users\33769\documents\github\epoques-arena\affliste.c
+	"maBiblio.h"
+
+1653053304 c:\users\33769\documents\github\epoques-arena\mabiblio.h
+	"structures.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+	<string.h>
+	<allegro.h>
+	"structures.h"
+
+1652889976 c:\users\33769\documents\github\epoques-arena\structures.h
+	<stdio.h>
+	<stdlib.h>
+
+1652877011 source:c:\users\33769\documents\github\epoques-arena\choix du nombre de joueurs.c
+	"maBiblio.h"
+
+1653050868 source:c:\users\33769\documents\github\epoques-arena\choixclasse.c
+	"maBiblio.h"
+
+1652877012 source:c:\users\33769\documents\github\epoques-arena\hub de redirection.c
+	"maBiblio.h"
+
+1652967034 source:c:\users\33769\documents\github\epoques-arena\initialisation.c
+	"maBiblio.h"
+
+1652976217 source:c:\users\33769\documents\github\epoques-arena\lancement menu.c
+	"maBiblio.h"
+
+1652877012 source:c:\users\33769\documents\github\epoques-arena\lancementcredits.c
+	"maBiblio.h"
+
+1652884538 source:c:\users\33769\documents\github\epoques-arena\lfichier.c
+	"maBiblio.h"
+
+1652876995 source:c:\users\33769\documents\github\epoques-arena\rdonnees.c
+	"maBiblio.h"
+
+1652884538 source:c:\users\33769\documents\github\epoques-arena\testrecupjoueur.c
+	"maBiblio.h"
+
+1652977464 source:c:\users\33769\documents\github\epoques-arena\cclasses.c
+	"maBiblio.h"
+
+1653050673 source:c:\users\33769\documents\github\epoques-arena\cclasses1.c
+	"maBiblio.h"
+
+1652884557 source:c:\users\33769\documents\github\epoques-arena\cclasses2.c
+	"maBiblio.h"
+
+1652884557 source:c:\users\33769\documents\github\epoques-arena\cclasses3.c
+	"maBiblio.h"
+
+1652884557 source:c:\users\33769\documents\github\epoques-arena\allouecarte.c
+	"maBiblio.h"
+
+1653050868 source:c:\users\33769\documents\github\epoques-arena\cjoueur.c
+	"maBiblio.h"
+
+1653053343 source:c:\users\33769\documents\github\epoques-arena\enjeu.c
+	"maBiblio.h"
+
+1653050673 source:c:\users\33769\documents\github\epoques-arena\lfichier1.c
+	"maBiblio.h"
+
+1652884557 source:c:\users\33769\documents\github\epoques-arena\lfichier2.c
+	"maBiblio.h"
+
+1652884557 source:c:\users\33769\documents\github\epoques-arena\lfichier3.c
+	"maBiblio.h"
+
+1653053576 source:c:\users\33769\documents\github\epoques-arena\main.c
+	"maBiblio.h"
+
+1652889827 source:c:\users\33769\documents\github\epoques-arena\lancersort.c
+	"maBiblio.h"
+
+1652889948 source:c:\users\33769\documents\github\epoques-arena\allouecases.c
+	"maBiblio.h"
+
+1652967009 source:c:\users\33769\documents\github\epoques-arena\initjoueur.c
+	"maBiblio.h"
+
+1653053469 source:c:\users\33769\documents\github\epoques-arena\remplissagebuffer.c
+	"maBiblio.h"
+

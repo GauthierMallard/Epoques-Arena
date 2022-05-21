@@ -2,14 +2,17 @@
 
 void lancerSort(t_joueur* lanceur, int choixSort, t_cases carte[LIGNES][COLONNES], t_joueur* joueurs, int* nbjoueur)
 {
+    /*
     //Fonction a lancer lors du clic d'un joueur sur une des cases de sort
 
     t_joueur* victime;
     srand(time(NULL));
 
+
     if(mouse_b&1)
     {
         victime->id/*=id de l'adversaire sur lequel le joueur clic*/;///LES 2 WARNINGS SONT DU A CETTE LIGNE
+
 
         //Certainement à mettre sous la forme d'un ss programme, pour recup les coord de la case sur laquelle le joueur clic, les comparer à celles des joueurs et renvoyer l'id du joueur visé.
 
@@ -17,6 +20,7 @@ void lancerSort(t_joueur* lanceur, int choixSort, t_cases carte[LIGNES][COLONNES
 
         long int alea1 = (rand()/(lanceur->classeJ.sorts[choixSort].proba1))+1;
         long int alea2 = (rand()/(lanceur->classeJ.sorts[choixSort].proba2))+1;
+
 
         /*
         Type 0 : s’applique sur le joueur. On utilise que effet 1 pour pv et effet 2 pour pm.
@@ -27,6 +31,7 @@ void lancerSort(t_joueur* lanceur, int choixSort, t_cases carte[LIGNES][COLONNES
         */
 
         if(lanceur->classeJ.sorts[choixSort].type == 0)
+
         {
             if(alea1 < 3)
             {
@@ -86,7 +91,7 @@ void lancerSort(t_joueur* lanceur, int choixSort, t_cases carte[LIGNES][COLONNES
             }
         }
 
-
+*/
 
         /*Je pense qu'il n'y a pas besoin de return quoi que ce soit.
         Lorsque le joueur lance un sort, on lui enleve des pa le temps d'un tour et on applique les effets

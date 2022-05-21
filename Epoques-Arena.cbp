@@ -37,7 +37,7 @@
 		<Unit filename="affListe.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="alloueCarte.c">
+		<Unit filename="alloueCases.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="cClasses.c">
@@ -55,16 +55,19 @@
 		<Unit filename="cJoueur.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="chargementBitmaps.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="choix du nombre de joueurs.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="choixClasse.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="enJeu.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="hub de redirection.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="initJoueur.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="initialisation.c">
@@ -96,6 +99,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="rDonnees.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="remplissageBuffer.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="structures.h" />
