@@ -40,6 +40,9 @@
 		<Unit filename="alloueCases.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="animationPersonnageCourt.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="cClasses.c">
 			<Option compilerVar="CC" />
 		</Unit>
