@@ -28,10 +28,11 @@ int main()
     BITMAP *perso1w = NULL;
     BITMAP *perso2w = NULL;
     BITMAP *perso3w = NULL;
-    BITMAP *choijoueur=NULL;
     BITMAP *choclasse=NULL;
+    BITMAP *grillage = NULL;
     BITMAP *chaussure = NULL;
     BITMAP *persocourt = NULL;
+    BITMAP *choijoueur = NULL;
     BITMAP *joueurSuivant=NULL;
     BITMAP *caseAttaqueAut=NULL;
     BITMAP *caseAttaqueEte=NULL;
@@ -158,6 +159,14 @@ int main()
         exit(EXIT_FAILURE);
     }
 
+    //récupération Bitmap grillage
+    grillage=load_bitmap("BITMAPS/grillagesuperpose.bmp",NULL);
+    if (!menu)
+    {
+        allegro_message("pas pu trouver grillage.bmp");
+        exit(EXIT_FAILURE);
+    }
+
     //récupération Bitmap pour choisir la classe
     choclasse=load_bitmap("BITMAPS/choixClasse.bmp",NULL);
     if (!menu)
@@ -226,7 +235,7 @@ int main()
         }
         else if(avjeu == 5)
         {
-            enJeu(decor,curseur,&avjeu,choijoueur,credit,coeur,epee,chaussure,perso0w,perso1w,perso2w,perso3w,persocourt,fondlave,joueurSuivant,caseAttaqueAut,joueurs,&nbjoueurs);
+            enJeu(decor,grillage,curseur,&avjeu,choijoueur,credit,coeur,epee,chaussure,perso0w,perso1w,perso2w,perso3w,persocourt,fondlave,joueurSuivant,caseAttaqueAut,joueurs,&nbjoueurs);
         }
     }
 

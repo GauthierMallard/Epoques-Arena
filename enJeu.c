@@ -3,7 +3,7 @@
 /*
 Programme qui fait tourner le jeu en fond et gère toute les actions des joueurs durant leurs tours de jeu
 */
-void enJeu(BITMAP* decor,BITMAP* curseur,int* avjeu,BITMAP *choijoueur,BITMAP *credit,BITMAP *coeur,BITMAP *epee,BITMAP *chaussure,BITMAP *perso0w,BITMAP *perso1w,BITMAP *perso2w,BITMAP *perso3w,BITMAP *persocourt,BITMAP *fondlave,BITMAP *joueurSuivant,BITMAP *caseAttaque,t_joueur* joueurs,int* nbjoueur)
+void enJeu(BITMAP* decor,BITMAP* grillage,BITMAP* curseur,int* avjeu,BITMAP *choijoueur,BITMAP *credit,BITMAP *coeur,BITMAP *epee,BITMAP *chaussure,BITMAP *perso0w,BITMAP *perso1w,BITMAP *perso2w,BITMAP *perso3w,BITMAP *persocourt,BITMAP *fondlave,BITMAP *joueurSuivant,BITMAP *caseAttaque,t_joueur* joueurs,int* nbjoueur)
 {
     int jqj=0;//variable correspondant au joueur qui jou actuellement
     //création du double buffer page
@@ -14,7 +14,7 @@ void enJeu(BITMAP* decor,BITMAP* curseur,int* avjeu,BITMAP *choijoueur,BITMAP *c
     while(*avjeu==5)
     {
 
-        remplissageBuffer(decor,page,coeur,epee,chaussure,perso0w,perso1w,perso2w,perso3w,persocourt,fondlave,joueurSuivant,caseAttaque,joueurs,jqj,*nbjoueur);
+        remplissageBuffer(decor,grillage,page,coeur,epee,chaussure,perso0w,perso1w,perso2w,perso3w,persocourt,fondlave,joueurSuivant,caseAttaque,joueurs,jqj,*nbjoueur);
         //affichage du curseur sur le menu sans les bords roses
         masked_blit(curseur,page,0,0,mouse_x,mouse_y,curseur->w,curseur->h);
 

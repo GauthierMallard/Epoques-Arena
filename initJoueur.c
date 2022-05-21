@@ -8,8 +8,8 @@ void initJoueur(t_joueur* joueurs)
     joueurs[1].coordJ.lignes=17*32;
     joueurs[2].coordJ.lignes=2*32;
     joueurs[3].coordJ.lignes=17*32;
-    joueurs[0].coordJ.colonnes=5*32;
-    joueurs[1].coordJ.colonnes=6*32;
-    joueurs[2].coordJ.colonnes=13*32;
-    joueurs[3].coordJ.colonnes=17*32;
+    joueurs[0].coordJ.colonnes=3*32;
+    joueurs[1].coordJ.colonnes=4*32;
+    joueurs[2].coordJ.colonnes=10*32;
+    joueurs[3].coordJ.colonnes=15*32;
 }
