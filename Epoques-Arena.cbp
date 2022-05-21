@@ -112,6 +112,9 @@
 		</Unit>
 		<Unit filename="rDonnees.c">
 			<Option compilerVar="CC" />
+			</Unit>
+		<Unit filename="recupClicSort.c">
+			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="remplissageBuffer.c">
 			<Option compilerVar="CC" />
